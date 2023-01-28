@@ -1,0 +1,59 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.form {
+
+
+  @include flex(column, center, center, wrap);
+  width: 80%;
+  margin: 0 auto;
+
+  .closeModal{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right:20px;
+    top:0;
+  }
+  .name {
+    @include text(17px, 600)
+  }
+
+  .textareaWrapper {
+    @include text(14px, 400)
+  }
+
+  .input {
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 238px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #9b9b9b;
+    border: 1px solid #9b9b9b;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 20px;
+    @include btnDeleteStyle();
+    color: white;
+    border: 1px solid #6EEC4E;
+    background-color: #6EEC4E;
+    border-radius: 30px;
+    padding: 10px;
+
+    &:hover,
+    &:active {
+      background-color: white;
+      color: #6EEC4E;
+    }
+
+    .closeModal {
+      position: absolute;
+      justify-content: end;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../../../common/style/sass/variables";
+@import "../../../../common/style/sass/mixins";
+@import "../../../../common/components/title/Title.module";
+
+.work {
+  width: 458px;
+  height: 501px;
+  border-radius: 17px;
+  position: relative;
+  opacity: 1;
+  font-size: 24px;
+
+  .workWrapper {
+
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    opacity: 0;
+    color: $secondTextColor;
+    @include flex(column, start, center, wrap);
+
+    &:hover {
+      opacity: 1;
+
+      .workTitle {
+        position: relative;
+        font-weight: 800;
+        z-index: 1;
+        padding: 20px;
+        padding-left: 100px;
+      }
+
+      .workDesc {
+        position: relative;
+        padding: 20px;
+        padding-left: 100px;
+        z-index: 1;
+        margin-bottom: 30px;
+      }
+
+      .buttonWork {
+        color: white;
+        position: relative;
+        background-color: transparent;
+        @include text(28px, 600);
+        text-transform: uppercase;
+        border: none;
+        z-index: 1;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+          color: $activeColor;
+        }
+      ;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        background: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.8;
+        border-radius: 17px;
+      }
+    }
+  }
+
+}

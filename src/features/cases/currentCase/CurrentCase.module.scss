@@ -1,0 +1,154 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+@import "../../../common/components/title/Title.module";
+
+
+.casesContainer {
+  @include container();
+  width: 90%;
+  margin-bottom: 50px;
+
+  .title {
+    @include textTitle()
+  }
+
+  .casesInfoContainer {
+    @include flex(row, start, center, wrap);
+    box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding: 36px;
+    margin-bottom: 140px;
+
+    ul {
+      width: 50%;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      .aboutCompany {
+        margin-bottom: 20px;
+
+      }
+
+      li {
+
+        list-style-type: none;
+        padding-left: 20px;
+
+
+        img {
+          max-width: 300px;
+          max-height: 100px;
+        }
+
+      }
+    }
+  }
+
+  .taskWebContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    .titleTask {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 15px 0;
+      background-color: $activeColor;
+      border-radius: 6px 6px 0 0;
+      @include text(24px, 800);
+      color: $secondTextColor;
+
+    }
+
+    .wrapperCurrentDesc {
+      box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.25);
+
+      border-radius: 0 0 6px 6px;
+      padding: 10px;
+
+      .taskWebDataContainer {
+
+        .name {
+          width: 50%;
+          border: solid #e6e6e6;
+          border-width: 0 1px 1px 0;
+          border-collapse: collapse;
+          padding: 10px;
+        }
+
+        .value {
+          border: solid #e6e6e6;
+          border-width: 0 0 1px 0;
+          border-collapse: collapse;
+          padding: 10px;
+        }
+
+      }
+    }
+  }
+
+  .descriptionContainer {
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%; /* Ширина изображений */
+        height: 100%; /* Высота изображении */
+        object-fit: cover; /* Вписываем фотографию в область */
+      }
+    }
+  }
+
+  .workContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  .simularHeader {
+    @include text(24px, 800);
+    margin: 50px 0;
+    margin-left: 130px;
+  }
+
+  .simularCaseContainer {
+    @include flex(row, center, center, wrap);
+    gap: 50px;
+
+    .simularCase {
+      border-radius: 27px;
+      border: 2px solid #ef7f11;
+      width: 300px;
+      height: 300px;
+
+      .lastSimular {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: white;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50px;
+          left: 125px;
+          width: 50px;
+          height: 50px;
+          background-image: url("../../../assets/img/add.png");
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

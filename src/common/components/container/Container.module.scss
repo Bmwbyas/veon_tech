@@ -1,0 +1,7 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  @include container();
+  @include flex(row, center, center, wrap);
+}

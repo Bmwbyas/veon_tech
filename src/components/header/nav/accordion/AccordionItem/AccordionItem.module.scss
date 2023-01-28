@@ -1,0 +1,41 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+
+
+  .wrapper {
+    position: absolute;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+
+    top:52px;
+    left: 1px;
+    width: 200px;
+    padding: 20px 0;
+    background-color: white;
+    z-index: 100;
+    .container {
+      @include container();
+      @include flex(column, start, center, wrap);
+      margin-right: 10px;
+    .item {
+      position: relative;
+      @include text(14px, 400);
+      text-decoration: none;
+      color:#000000;
+      padding: 10px 0;
+      &:hover{
+        text-decoration: underline $activeColor ;
+      }
+      &:before{
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $activeColor;
+        border-radius: 50%;
+        top: 13px;
+        left: -19px;
+      }
+    }
+  }
+}

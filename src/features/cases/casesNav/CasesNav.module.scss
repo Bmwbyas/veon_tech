@@ -1,0 +1,25 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container{
+
+  @include container();
+  @include flex(row, center, center, wrap);
+  .nav{
+    position: relative;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9a9a9a;
+   @include text(16px,600)
+  }
+  .active{
+    color:$activeColor;
+  }
+  .dash{
+    margin: 0 15px;
+    height: 1px;
+    width: 22px;
+    background-color: #9a9a9a;
+  }
+}

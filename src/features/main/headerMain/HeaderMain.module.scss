@@ -1,0 +1,48 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container{
+  @include flex(column,start,center,wrap);
+  @include container();
+  min-height: 30vh;
+  background-color: white;
+  padding-top: 200px;
+  .h1{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+
+   @include text(58px,900);
+    @media (max-width: 792px) {
+      margin-left: 0;
+      align-items: center;
+      font-size: 40px;
+    }
+    .text{
+      color: $activeColor;
+    }
+    .paragrah{@include text(20px,400)}
+  }
+  .button{
+    cursor: pointer;
+    background-color:$activeColor;
+    border-radius: 8px;
+    width: 278px;
+    padding: 12px 19px;
+    border:none;
+    color: #ffffff;
+    @include text(16px,700)
+  }
+  .formContainer{
+    @include flex(row,center,start,wrap);
+    position: fixed;
+    z-index: 12345678;
+    height: 100%;
+    width:500px;
+    left: 0;
+    top:0;
+    min-width: 360px;
+    background-color: #d9d9d9;
+  }
+
+}

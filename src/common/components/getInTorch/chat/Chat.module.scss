@@ -1,0 +1,55 @@
+@import "../../../../common/style/sass/variables";
+@import "../../../../common/style/sass/mixins";
+
+.container{
+  position: fixed;
+  bottom:0;
+  right: 0;
+  background-color: #6eec4e;
+  border-radius: 17px;
+  z-index: 123456789;
+.btnCont{
+  @include flex(row, center, end, wrap);
+  border-radius: 17px;
+  right: 0;
+  top:50%;
+  z-index: 12345678;
+  width: 300px;
+
+  background-color: #6EEC4E;
+  padding: 10px 10px 10px 40px;
+
+  .bth{
+    @include flex(row, center, start, wrap);
+    @include btnDeleteStyle();
+    position: relative;
+
+    .header{
+      color:white;
+      @include text(18px,800);
+    }
+    .text{
+      color:white;
+      @include text(10px,400);
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      top: 6px;
+      left: -27px;
+      background-color: #D9D9D9;
+    }
+  }
+}
+  .content{
+
+   min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 376px;
+    height:auto ;
+  }
+}

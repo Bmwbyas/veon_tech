@@ -1,0 +1,66 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.s {
+  @include flex(column, center, center, wrap);
+
+  .container {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+    box-sizing: border-box;
+    width: 95%;
+    gap:30px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    @media (max-width: 1020px) {
+      grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr)
+    }
+    @media (max-width: 700px) {
+      grid-template-columns:  minmax(300px, 1fr);
+      justify-content: center;
+      width: auto;
+      margin: 0   10px;
+    }
+    .imgContainer {
+
+      .img {
+        min-width: 300px;
+        width:100%;
+        min-height: 300px;
+        height: 100%;
+
+      }
+
+      margin: 31px 0;
+    }
+  }
+
+  .btn {
+    border: 1px solid $activeColor;
+    position: relative;
+    padding: 10px 50px 10px 30px;
+    background-color: transparent;
+    margin-bottom: 110px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .span {
+    position: relative;
+    display: block;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-image: url("../../../assets/img/case/ArrowDown.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+      right: -25px;
+    }
+  }
+}

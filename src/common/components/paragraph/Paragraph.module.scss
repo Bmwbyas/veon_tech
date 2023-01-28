@@ -1,0 +1,9 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.div{
+  .span{
+    @include text(24,800);
+  }
+  margin-bottom: 40px;
+}

@@ -1,0 +1,73 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  @include flex(row, center, center, wrap);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../assets/img/imgMain/contact/bg-image.png");
+
+  .wrapper {
+    //@include flex(row, center, center, wrap);
+
+
+    .form {
+      @include flex(column, center, center, wrap);
+      background-color: white;
+      border-radius: 43px;
+
+      margin: 100px 0;
+
+      .name {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        border-radius: 43px 43px 0 0;
+        @include text(34px, 800);
+        color: white;
+        background-color: $activeColor;
+      }
+
+      .containerInput {
+        @include flex(row, center, center, wrap);
+        margin:0 20px;
+        box-sizing: border-box;
+        padding: 40px 0;
+
+        .input {
+          margin: 20px;
+          padding: 20px;
+          width: 242px;
+          border-radius: 7px;
+        }
+      }
+
+      .textareaWrapper {
+        width: 90%;
+
+        .textarea {
+          width: 100%;
+          min-height: 174px;
+          border-radius: 7px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .buttonWrapper {
+        width: 90%;
+        .button {
+          width: 100%;
+          @include text(24px, 800);
+          margin: 0;
+          padding: 10px;
+          color: white;
+          background-color: $activeColor;
+          border-radius: 70px;
+          border: none;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

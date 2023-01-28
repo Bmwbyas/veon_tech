@@ -1,0 +1,25 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.titleContainer {
+  min-height: 240px;
+
+  background-color: $bgColor;
+
+
+  .titleWrapper {
+    @include container();
+    padding: 100px 0 50px 0;
+    h2 {
+      @include textTitle();
+      padding: 0;
+      margin: 0;
+
+      padding-top: 94px;
+    }
+    .breadcrumb{
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+  }
+}

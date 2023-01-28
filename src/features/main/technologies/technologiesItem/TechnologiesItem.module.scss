@@ -1,0 +1,15 @@
+@import "../../../../common/style/sass/variables";
+@import "../../../../common/style/sass/mixins";
+.container {
+  @include flex(column, center, space-around, wrap);
+  width: 100%;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 100px;
+  margin: 20px 0;
+  .img{
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+  }
+}

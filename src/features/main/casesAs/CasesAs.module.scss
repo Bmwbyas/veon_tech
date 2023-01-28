@@ -1,0 +1,40 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  background-color: $footerBgColor;
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    @include text(42px, 800);
+    color: white;
+    text-align: center;
+
+    .span {
+      @include text(20px, 700);
+      color: $activeColor
+    }
+  }
+
+  .cases {
+    //@include flex(row, center, space-around, wrap);
+
+    display: grid;
+    grid-template-columns: minmax(200px ,512px) minmax(200px ,512px) minmax(200px ,512px);
+    gap:30px;
+    padding-bottom: 50px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+
+      grid-template-columns: minmax(200px ,512px) minmax(200px ,512px);
+    }
+    @media (max-width: 840px) {
+
+      grid-template-columns: minmax(200px ,512px) ;
+    }
+  }
+
+}
