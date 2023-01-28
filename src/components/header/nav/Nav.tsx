@@ -3,7 +3,7 @@ import s from './Nav.module.scss'
 import {NavLink} from "react-router-dom";
 import {routes} from "../../../features/routes/routes";
 
-import {aboutUsData, servicesData} from "./data";
+import {servicesData} from "./data";
 import Accordion from "./accordion/Accordion";
 import ButtonClick from "./buttunClick/ButtonClick";
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Technologies.module.scss'
-import imgTechnologies from "../../../assets/img/imgMain/technologies/techWeb.png";
 import {techData} from "./data";
 import {TechnologiesItem} from "./technologiesItem/TechnologiesItem";
 

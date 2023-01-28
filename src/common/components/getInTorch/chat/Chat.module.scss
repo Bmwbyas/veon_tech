@@ -8,6 +8,17 @@
   background-color: #6eec4e;
   border-radius: 17px;
   z-index: 123456789;
+  .close{
+    position: absolute;
+    right: 10px;
+    top:0;
+   font-size: 30px;
+    //background-color: black;
+    cursor: pointer;
+    &:hover{
+      color: white;
+    }
+  }
 .btnCont{
   @include flex(row, center, end, wrap);
   border-radius: 17px;
@@ -22,6 +33,7 @@
   .bth{
     @include flex(row, center, start, wrap);
     @include btnDeleteStyle();
+    cursor: auto;
     position: relative;
 
     .header{

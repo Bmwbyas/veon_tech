@@ -3,7 +3,7 @@ import case2 from "../../../assets/img/imgMain/cases/a2.png";
 import case3 from "../../../assets/img/imgMain/cases/a3.png";
 import case4 from "../../../assets/img/imgMain/cases/a4.png";
 import case5 from "../../../assets/img/imgMain/cases/a5.png";
-import {ExampleType, WorkDataType} from "../../cases/currentCase/data";
+import {ExampleType} from "../../cases/currentCase/data";
 
 
 export type CasesDataType={

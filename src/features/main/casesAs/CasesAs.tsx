@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './CasesAs.module.scss'
-import {casesData, imgddfdgsgd} from "./data";
+import {casesData} from "./data";
 import {Case} from "./case/Case";
 
 export const CasesAs = () => {

@@ -1,7 +1,6 @@
 import img1 from "../../../assets/img/iconAboutUs/img1.png";
 import img2 from "../../../assets/img/iconAboutUs/img2.png";
 import img3 from "../../../assets/img/iconAboutUs/img3.png";
-import example2 from "../../../assets/img/imgCases/example2.png";
 
 const img1Feat = {
     backgroundImage: 'url(' + img1 + ')',

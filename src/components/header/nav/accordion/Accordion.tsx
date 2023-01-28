@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import s from "../Nav.module.scss";
 import st from './AccordionItem/AccordionItem.module.scss'
 import {DataType} from "../data";
@@ -10,7 +9,7 @@ type AccordionType = {
     mainRoute: string
     title: string
 }
-const Accordion: React.FC<AccordionType> = ({data, mainRoute, title}) => {
+const Accordion: React.FC<AccordionType> = ({data, title}) => {
     const [view, setView] = React.useState(false)
     const openViewHandler = () => {
         setView(true)

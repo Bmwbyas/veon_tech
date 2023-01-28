@@ -1,7 +1,7 @@
 import React from 'react';
 import {DType} from "../data";
-import {Container} from "../../../../common/components/container/Container";
 import s from './TechnologiesItem.module.scss'
+
 export type TechnologiesItemType={
     tech:DType
 }

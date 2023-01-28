@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Case.module.scss'
-import case4 from "../../../../assets/img/imgMain/cases/a4.png";
-import {CasesDataType, imgddfdgsgd} from "../data";
+import {CasesDataType} from "../data";
 
 type CaseType={
     data:CasesDataType
@@ -11,7 +10,7 @@ export const Case:React.FC<CaseType> = ({data,index}) => {
     const {img,desc,title}=data
     const viev=typeof (img)==='string'
     return (
-        <div className={s.container}>
+        <div className={s.container} key={index}>
             {viev?<div className={s.imgContainer} ><img className={s.img}  src={img} sizes="(max-width: 1800px) 500px" alt="d"/></div>:
                 <div className={s.imgContainer} style={img}></div>
             }

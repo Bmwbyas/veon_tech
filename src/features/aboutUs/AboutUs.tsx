@@ -2,7 +2,6 @@ import React from 'react';
 import {Title} from "../../common/components/title/Title";
 import s from './AboutUs.module.scss'
 import {DescriptionAboutUs} from "./DescriptionAboutUs/DescriptionAboutUs";
-import {Technologies} from "../main/technologies/Technologies";
 import {Reviews} from "../main/reviews/Reviews";
 
 export const AboutUs = () => {

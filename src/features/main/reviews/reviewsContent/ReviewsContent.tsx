@@ -4,12 +4,7 @@ import {reviewData, reviewDataKey} from "./data";
 
 const ReviewsContent = () => {
    const [value,setValue]=React.useState<reviewDataKey>('second')
-    const className=value==='first'?s.change + ' ' + s.active:s.change
-    const onClickHandler=(reviewValue:reviewDataKey)=>{
 
-       setValue(reviewValue)
-
-    }
     return (
         <>
             <div className={s.reviews}>
