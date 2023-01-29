@@ -6,10 +6,6 @@
 
   .contactContainer {
     @include flex(row, start, center, wrap);
-    @include container();
-    width: 90%;
-
-
 
     .itemContainer {
       @include flex(column, center, center, nowrap);
@@ -25,6 +21,7 @@
       &:first-child {
         border-left: none;
       }
+
 
       .icon {
         width: 50px;

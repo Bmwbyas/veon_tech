@@ -1,0 +1,54 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+
+.wrapContacts {
+  @include flex(row, start, center, nowrap);
+  background-color: #E9FCE5;
+  width: 100%;
+  padding: 20px;
+  .mapContainer {
+    flex: 1 1 60%;
+
+
+    .mapHeader {
+      @include text(24px, 800);
+      text-align: center;
+
+      span {
+        color: $activeColor;
+      }
+    }
+
+    .map {
+      margin: 0 auto;
+      width: 667px;
+      flex-shrink: 1;
+      background-position: center;
+      //max-width: 667px;
+      //min-width: 267px;
+      min-height: 389px;
+      //width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .getInTorchContainer {
+    @include flex(column, center, center, nowrap);
+    flex: 1 1 40%;
+    .getInTorchHeader {
+      //@extend .mapHeader;
+      text-align: center;
+      @include text(24px, 800);
+      span {
+        color: $activeColor;
+      }
+    }
+
+    .text {
+      @include text(16px,600);
+      margin: 20px 0;
+      text-align: center;
+    }
+  }
+}
