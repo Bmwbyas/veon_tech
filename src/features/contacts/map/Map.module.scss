@@ -6,49 +6,131 @@
   @include flex(row, start, center, nowrap);
   background-color: #E9FCE5;
   width: 100%;
-  padding: 20px;
+  padding: 50px 20px;
+  @media (max-width: 1150px) {
+    @include flex(column, center, center, nowrap);
+  }
+
   .mapContainer {
     flex: 1 1 60%;
-
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
 
     .mapHeader {
       @include text(24px, 800);
       text-align: center;
+      margin-bottom: 20px;
 
       span {
         color: $activeColor;
       }
     }
 
-    .map {
-      margin: 0 auto;
-      width: 667px;
-      flex-shrink: 1;
-      background-position: center;
-      //max-width: 667px;
-      //min-width: 267px;
-      min-height: 389px;
-      //width: 100%;
-      height: auto;
-      object-fit: cover;
+    .mapImg {
+      //display: flex;
+      //justify-content: end;
+      .map {
+        display: block;
+        margin-right: auto;
+        //max-width: 667px;
+        //min-width: 267px;
+        min-height: 389px;
+        //width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (max-width: 1150px) {
+          width: 100%;
+          background-size: cover;
+        }
+      }
     }
+
   }
+
   .getInTorchContainer {
     @include flex(column, center, center, nowrap);
     flex: 1 1 40%;
+
     .getInTorchHeader {
       //@extend .mapHeader;
       text-align: center;
       @include text(24px, 800);
+
       span {
         color: $activeColor;
       }
     }
 
     .text {
-      @include text(16px,600);
+      @include text(16px, 600);
       margin: 20px 0;
       text-align: center;
     }
+
+    .form {
+      width: 80%;
+      @include flex(column, center, center, nowrap);
+      background: #FFFDFD;
+      box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+
+      .input {
+        width: 80%;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 7px;
+        border: 1px solid #3D5F47;
+      }
+
+      .textareaWrapper {
+        width: 80%;
+        margin-top: 20px;
+
+        .textarea {
+          width: 100%;
+          border-radius: 7px;
+          min-height: 100px;
+          border: 1px solid #3D5F47;
+        }
+      }
+
+      .p {
+        width: 80%;
+        @include text(14px, 400);
+
+        .span {
+          text-decoration: underline;
+          color: #18698B;
+          cursor: pointer;
+        }
+      }
+
+      .buttonCont {
+        display: flex;
+        width: 80%;
+
+        .button {
+
+          @include text(16px, 400);
+
+          padding: 10px 20px;
+          color: white;
+          background-color: $activeColor;
+          border-radius: 70px;
+          margin-bottom: 40px;
+          border: 1px solid $activeColor;
+
+          &:hover,
+          &:active {
+            background-color: white;
+            color: $activeColor;
+          }
+        }
+      }
+    }
   }
+
 }

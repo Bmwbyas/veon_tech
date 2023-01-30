@@ -5,6 +5,7 @@ import {contactData} from "./data";
 
 import {WorkHour} from "./workHour/WorkHour";
 import {Map} from "./map/Map";
+import {Requisites} from "./Requisites/Requisites";
 
 
 export const Contacts = () => {
@@ -22,6 +23,7 @@ export const Contacts = () => {
                 </div>
                <WorkHour/>
                 <Map/>
+                <Requisites/>
             </div>
         </>
 

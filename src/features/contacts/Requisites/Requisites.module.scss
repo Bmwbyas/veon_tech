@@ -1,0 +1,53 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.container {
+  @include flex(row, center, center, wrap);
+  width: 60%;
+
+  .textContainer {
+    flex: 1 1 60%;
+    padding: 20px;
+
+    .textHeader {
+      width: 90%;
+      @include text(30px, 600)
+    }
+
+    .text {
+      width: 90%;
+    }
+  }
+
+  .imgContainer {
+    flex: 1 1 40%;
+    @include flex(column, center, center, wrap);
+
+    .img {
+      width: 100%;
+      max-width: 191px;
+      height: 212px;
+      max-height: 212px;
+      background-repeat: no-repeat;
+    }
+
+    .button {
+
+      @include text(16px, 400);
+
+      padding: 10px 20px;
+      color: white;
+      background-color: $activeColor;
+      border-radius: 70px;
+      margin-bottom: 40px;
+      border: 1px solid $activeColor;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: white;
+        color: $activeColor;
+      }
+    }
+  }
+}

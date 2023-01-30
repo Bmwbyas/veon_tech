@@ -64,8 +64,13 @@
           color: white;
           background-color: $activeColor;
           border-radius: 70px;
-          border: none;
           margin-bottom: 40px;
+          border: 1px solid $activeColor;
+          &:hover,
+          &:active{
+            background-color: white;
+            color: $activeColor;
+          }
         }
       }
     }

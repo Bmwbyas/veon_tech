@@ -6,7 +6,7 @@ type FormComponentPropsType={
 }
 export const FormComponent:React.FC<FormComponentPropsType>= ({closemodal}) => {
     return (
-        <form className={s.form} onClick={e=>e.stopPropagation()}>
+        <form className={s.form}>
             <div className={s.closeModal} onClick={closemodal}>x</div>
             <div className={s.name}>Заявка на обратный звонок</div>
 
