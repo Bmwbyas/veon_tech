@@ -1,13 +1,14 @@
 @import "../../../common/style/sass/variables";
 @import "../../../common/style/sass/mixins";
 
-.container{
-  @include flex(row,start,start,nowrap);
+.container {
+  @include flex(row, start, start, nowrap);
   @include container();
   min-height: 30vh;
   background-color: white;
   padding-top: 200px;
-  gap:30px;
+  gap: 30px;
+
   .h1 {
     width: 50%;
     margin-top: 30px;
@@ -31,28 +32,70 @@
 
     .button {
       cursor: pointer;
+      position: relative;
       background-color: $activeColor;
       border-radius: 8px;
       width: 278px;
       padding: 12px 19px;
       border: none;
       color: #ffffff;
-      @include text(16px, 700)
+      @include text(16px, 700);
+      transition: all 1.5s;
     }
 
-    .formContainer {
-      @include flex(row, center, start, wrap);
+    .containerModal {
+      transform: translate(0, 0);
+      @include flex(row, center, center, wrap);
       position: fixed;
-      z-index: 12345678;
-      height: 100%;
-      width: 500px;
+      height: 100vh;
+      width: 100vw;
+      border: none;
       left: 0;
       top: 0;
-      min-width: 360px;
-      background-color: #d9d9d9;
+      z-index: 234567890;
+      transition: all 1.5s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        opacity: 0.8;
+        border-radius: 17px;
+        transition: all 0.5s;
+      }
+
+      .formContainer {
+        transition: all 1.5s;
+        @include flex(row, center, start, wrap);
+        position: absolute;
+        z-index: 12345678;
+        height: 100%;
+        width:100%;
+        max-width: 500px;
+        -webkit-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+
+        left: 0;
+        top: 0;
+        min-width: 360px;
+        background-color: #d9d9d9;
+      }
+    }
+    .noModal{
+        overflow: hidden;
+        transform: translate( -10000px,0);
+        transition: 0.3s;
+        z-index: 2345678902;
+
     }
   }
-  .animation{
+
+  .animation {
     @include flex(row, center, center, wrap);
     width: 50%;
 
