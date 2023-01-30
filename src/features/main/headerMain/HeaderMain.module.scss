@@ -35,12 +35,17 @@
       position: relative;
       background-color: $activeColor;
       border-radius: 8px;
+      border: 1px solid $activeColor;
       width: 278px;
       padding: 12px 19px;
-      border: none;
       color: #ffffff;
       @include text(16px, 700);
-      transition: all 1.5s;
+      transition: all 0.5s;
+      &:hover,
+      &:active {
+        background-color: white;
+        color: $activeColor;
+      }
     }
 
     .containerModal {
