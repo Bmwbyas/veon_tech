@@ -33,7 +33,7 @@ export const Footer = () => {
                         С понедельника по пятницу</div>
                     <div>Copyright © 2022 Veon-Tech Ltd.<br/>
                         All Rights Reserved.</div>
-                    <div className={s.iconB} style={logoFooter}></div>
+
                 </div>
             </div>
         </div>

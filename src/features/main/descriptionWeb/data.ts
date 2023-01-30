@@ -46,14 +46,14 @@ export const devData:DevDataType[] = [
             backgroundImage: 'url(' + imgA4 + ')',
             backgroundSize: 'contain',
             backgroundPosition: 'center'
-        }
-    },{
-        header: 'Маркетинг',
-        desc: 'Мы не просто создаем веб-сайты, мы создаем веб-сайты, которые ПРОДАЮТ',
-        img: {
-            backgroundImage: 'url(' + imgA5 + ')',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center'
-        }
-    },
+        }}
+    // },{
+    //     header: 'Маркетинг',
+    //     desc: 'Мы не просто создаем веб-сайты, мы создаем веб-сайты, которые ПРОДАЮТ',
+    //     img: {
+    //         backgroundImage: 'url(' + imgA5 + ')',
+    //         backgroundSize: 'contain',
+    //         backgroundPosition: 'center'
+    //     }
+    // },
 ]

@@ -5,11 +5,20 @@
   @include flex(column, center,center, wrap);
   @include container();
   margin-top: 100px;
+  .rev{
+    @include text(28px,800)
+  }
+  .desc{
+    @include text(24px,600)
+  }
 
-
+}
+.descRadio{
+  @include text(24px,600)
 }
 .changeReview{
   @include flex(row, center,center, wrap);
+
   .change{
     padding: 0;
 

@@ -20,11 +20,19 @@
     .item {
       position: relative;
       @include text(14px, 400);
-      text-decoration: none;
       color:#000000;
       padding: 10px 0;
+
+      text-decoration: none;
+      background-image: linear-gradient($activeColor, $activeColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+
       &:hover{
-        text-decoration: underline $activeColor ;
+        //text-decoration: underline $activeColor ;
+        background-size: 100% 2px;
       }
       &:before{
         position: absolute;

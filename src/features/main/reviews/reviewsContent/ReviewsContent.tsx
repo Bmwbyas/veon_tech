@@ -11,7 +11,7 @@ const ReviewsContent = () => {
                 <p className={s.rev}>Отзывы</p>
                 <p className={s.desc}>{reviewData[value]}</p>
             </div>
-            <div style={{textAlign: "center"}}> Curabitur ullamcorper ultricies nisi.</div>
+            <div className={s.descRadio} style={{textAlign: "center"}}> Curabitur ullamcorper ultricies nisi.</div>
             <div className={s.changeReview}>
                 <button onClick={()=>setValue('first')} className={value==='first'?s.change + ' ' + s.active:s.change}></button>
                 <button onClick={()=>setValue('second')} className={value==='second'?s.change + ' ' + s.active:s.change }></button>

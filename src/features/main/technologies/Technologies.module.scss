@@ -19,8 +19,9 @@
       padding-bottom: 10px;
       border: none;
       background: transparent;
-
-      &:focus {
+      cursor: pointer;
+    }
+    .active{
         &:before {
 
           content: '';
@@ -31,22 +32,10 @@
           left: 0;
           background-color: $activeColor
         }
-      }
-
     }
   }
 
-  //.imgContainer {
-  //  position: relative;
-  //  display: flex;
-  //  justify-content: center;
-  //  margin: 100px;
-  //  .img {
-  //    width: 150%; /* Ширина изображений */
-  //    height: 150%; /* Высота изображении */
-  //    object-fit: cover; /* Вписываем фотографию в область */
-  //  }
-  //}
+
   .descContainer{
     @include flex(row, center, center, wrap);
     padding: 80px 0;

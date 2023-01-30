@@ -18,6 +18,9 @@ export const HeaderMain = () => {
                 <button className={s.button} onClick={openModal}>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
                 {view && <div className={s.formContainer} ><FormComponent closemodal={closeModal}  /></div>}
             </div>
+            <div className={s.animation}>
+                ANIMATION
+            </div>
 
         </div>
     );
