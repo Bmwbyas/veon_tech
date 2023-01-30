@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/veon_tech_by/static/css/main.1ad3cb04.css",
-    "main.js": "/veon_tech_by/static/js/main.bf2aca86.js",
+    "main.css": "/veon_tech_by/static/css/main.7f96653b.css",
+    "main.js": "/veon_tech_by/static/js/main.964d16e5.js",
     "static/js/787.28cb0dcd.chunk.js": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js",
     "static/media/example3.png": "/veon_tech_by/static/media/example3.8bbbc705aed7f869c30d.png",
     "static/media/example1.png": "/veon_tech_by/static/media/example1.adb8c25cd63b14110903.png",
     "static/media/example2.png": "/veon_tech_by/static/media/example2.3745ff2e40776cc1f292.png",
     "static/media/rentClub.png": "/veon_tech_by/static/media/rentClub.8a77a8b286ba38438b25.png",
     "static/media/bg-image.png": "/veon_tech_by/static/media/bg-image.947563c4400b8cf8ea21.png",
+    "static/media/map.png": "/veon_tech_by/static/media/map.8b3387fa2ca90e4ae582.png",
     "static/media/a4.png": "/veon_tech_by/static/media/a4.35155206833164eacef0.png",
     "static/media/img4.png": "/veon_tech_by/static/media/img4.fd88e56f79ff7c696f82.png",
     "static/media/img8.png": "/veon_tech_by/static/media/img8.ea09449fce9d23a443df.png",
@@ -34,12 +35,12 @@
     "static/media/Arrow 9.svg": "/veon_tech_by/static/media/Arrow 9.606be97968130e4b38a0.svg",
     "static/media/npm.svg": "/veon_tech_by/static/media/npm.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/vuejs.svg": "/veon_tech_by/static/media/vuejs.a9ef3938d4960ac238e9c64d78783931.svg",
-    "main.1ad3cb04.css.map": "/veon_tech_by/static/css/main.1ad3cb04.css.map",
-    "main.bf2aca86.js.map": "/veon_tech_by/static/js/main.bf2aca86.js.map",
+    "main.7f96653b.css.map": "/veon_tech_by/static/css/main.7f96653b.css.map",
+    "main.964d16e5.js.map": "/veon_tech_by/static/js/main.964d16e5.js.map",
     "787.28cb0dcd.chunk.js.map": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ad3cb04.css",
-    "static/js/main.bf2aca86.js"
+    "static/css/main.7f96653b.css",
+    "static/js/main.964d16e5.js"
   ]
 }
