@@ -57,6 +57,7 @@
       .buttonWrapper {
         width: 90%;
         .button {
+          cursor: pointer;
           width: 100%;
           @include text(24px, 800);
           margin: 0;
