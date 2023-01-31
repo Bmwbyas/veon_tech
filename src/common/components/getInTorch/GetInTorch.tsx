@@ -13,15 +13,14 @@ export const GetInTorch = () => {
     }
 
     return (<>
-            {view
-                ? <Chat closeModal={closeModal}/>
-                : <div className={s.Container}>
+            {!view&&<div className={s.Container}>
                     <button className={s.bth} onClick={openModal}>
                         <div className={s.header}>Пишите, отвечу лично-</div>
                         <div className={s.text}>Александр Иванцов, sales-manager</div>
                     </button>
                 </div>
             }
+            <Chat view={view} closeModal={closeModal}/>
         </>
     );
 };

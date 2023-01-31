@@ -4,12 +4,13 @@ import {Messages} from "./Messages/Messages";
 
 type ChatType={
     closeModal:()=>void
+    view:boolean
 }
-export const Chat:React.FC<ChatType> = ({closeModal}) => {
-
+export const Chat:React.FC<ChatType> = ({closeModal,view}) => {
+    const showModal=view?s.container:`${s.container} ${s.noModal}`
     return (
 
-        <div className={s.container}   > <span className={s.close} onClick={closeModal}>x</span>
+        <div className={showModal}   > <span className={s.close} onClick={closeModal}>x</span>
             <div className={s.btnCont} >
                 <button  className={s.bth} >
                     <div className={s.header}  >Пишите, отвечу лично-</div>

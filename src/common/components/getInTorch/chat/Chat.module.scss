@@ -3,8 +3,13 @@
 
 .container{
   position: fixed;
+  transition: 0.3s;
   bottom:0;
-  right: 0;
+  right: 95px;
+  @media (max-width: 450px) {
+    right: 0;
+  }
+  transform: translate(0,0);
   background-color: #6eec4e;
   border-radius: 17px;
   z-index: 123456789;
@@ -64,4 +69,11 @@
     min-height: 376px;
     height:auto ;
   }
+}
+.noModal{
+  overflow: hidden;
+  transform: translate( 0,10000px);
+  transition: 0.3s;
+  z-index: 2345678902;
+
 }

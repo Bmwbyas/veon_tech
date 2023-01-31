@@ -5,8 +5,9 @@
 .Container{
   @include flex(row, center, end, wrap);
   position: fixed;
-  right: 0;
-  top:50%;
+
+  right: 95px;
+  bottom: 20px;
 z-index: 12345678;
   width: 300px;
   border-radius: 14px;
