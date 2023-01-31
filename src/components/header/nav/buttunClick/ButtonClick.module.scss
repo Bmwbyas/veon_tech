@@ -1,0 +1,26 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.button {
+  background-color: $activeColor;
+  border-radius: 26px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid $activeColor;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 30px;
+  @media (max-width: 1540px) {
+    font-size: 14px;
+    margin-left: 0.5rem;
+
+  }
+
+  &:active,
+  &:hover{
+    background-color: white;
+    color:$activeColor
+  }
+}

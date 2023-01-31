@@ -4,12 +4,13 @@ import {FormComponent} from "./form/Form";
 
 export type ModalType={
     closeModal:()=>void
+    view:boolean
 }
 
-export const Modal:React.FC<ModalType> = ({closeModal}) => {
-
+export const Modal:React.FC<ModalType> = ({closeModal,view}) => {
+    const showModal=view?s.container:`${s.container} ${s.noModal}`
     return (
-        <div  className={s.container}>
+        <div  className={showModal}>
             <div  className={s.containerForm}>
                 <FormComponent  closemodal={closeModal}/>
             </div>

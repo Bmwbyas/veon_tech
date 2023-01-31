@@ -15,7 +15,7 @@ export const GetInTorchCase = () => {
         <section className={s.decsContainer}>
             <div>ХОТИТЕ <span className={s.textDesc}>ТАК ЖЕ? </span>МЫ <span>ПОМОЖЕМ!</span></div>
             <button onClick={openModal}  className={s.buttonDesc}>Заказать звонок</button>
-            {view && <Modal closeModal={closeModal} />}
+            {view && <Modal view={false} closeModal={closeModal} />}
         </section>
         </div>
     );

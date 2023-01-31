@@ -16,9 +16,15 @@
     min-height: 241px;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 0.5s;
 @media (max-width: 735px) {
   @include flex(row, center, center, wrap);
 }
+    &:hover{
+      //width: 110%;
+
+      transform: scale(1.05)
+    }
     .img{
       border-radius: 10px;
       @media (max-width: 1800px) {
