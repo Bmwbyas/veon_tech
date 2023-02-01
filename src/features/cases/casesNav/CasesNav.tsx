@@ -1,21 +1,41 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, {memo} from 'react';
 import s from './CasesNav.module.scss'
-import {routes} from "../../routes/routes";
+import {CasesDataType} from "../casesContent/data";
 
-export const CasesNav = () => {
+type CasesNavType={
+    filter:CasesDataType
+onChangeFilter:( filter:CasesDataType)=>void
+}
+type DataType= {
+    id:number
+    name:string
+    type:CasesDataType
+}
+
+export const data:DataType[]=[
+    {id:1,name:'ВСЕ',type:'all'},
+    {id:2,name:'ИНТЕРНЕТ-МАГАЗИНЫ',type:'market'},
+    {id:3,name:'ИНТЕРНЕТ-КАТАЛОГИ',type:'catalog'},
+    {id:4,name:'КОРПОРАТИВНЫЕ САЙТЫ',type:'corporat'},
+    {id:5,name:'САЙТ-ВИЗИТКИ',type:'visit'},
+
+]
+
+export const CasesNav:React.FC<CasesNavType> =memo( ({onChangeFilter,filter}) => {
+
     return (
         <div className={s.container}>
-           <NavLink className={s.nav} to={routes.cases}>ВСЕ</NavLink>
-           <div className={s.dash}></div>
-            <NavLink className={s.nav+' '+s.active} to={routes.cases}>ИНТЕРНЕТ-МАГАЗИНЫ</NavLink>
-            <div className={s.dash}></div>
-            <NavLink className={s.nav} to={routes.cases}>ИНТЕРНЕТ-КАТАЛОГИ</NavLink>
-            <div className={s.dash}></div>
-            <NavLink className={s.nav} to={routes.cases}>КОРПОРАТИВНЫЕ САЙТЫ</NavLink>
-            <div className={s.dash}></div>
-            <NavLink className={s.nav} to={routes.cases}>САЙТ-ВИЗИТКИ</NavLink>
+            {data.map((item)=>{
+                const showModal=item.type!==filter?s.nav:`${s.nav} ${s.active}`
+                const changeFilter=()=>{
+                    onChangeFilter(item.type)
+                }
+                return<div id={item.type} key={item.id} className={s.dash}>
+                    <div  className={showModal} onClick={changeFilter}>{item.name}</div>
+
+                </div>})}
+
         </div>
     );
-};
+});
 

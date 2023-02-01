@@ -1,20 +1,47 @@
-import img1 from "../../../assets/img/case/img1.png";
-import img2 from "../../../assets/img/case/img2.png";
-import img3 from "../../../assets/img/case/img3.png";
-import img4 from "../../../assets/img/case/img4.png";
-import img5 from "../../../assets/img/case/img5.png";
-import img6 from "../../../assets/img/case/img6.png";
-import img7 from "../../../assets/img/case/img7.png";
-import img8 from "../../../assets/img/case/img8.png";
+import rentMarket from "../../../assets/img/case/rentMarket.png";
+import couchingVisit from "../../../assets/img/case/couchingVisit.png";
+import partyCorporat from "../../../assets/img/case/partyCorporat.png";
+import prosnowVisit from "../../../assets/img/case/prosnowVisit.png";
+import elephantVizit from "../../../assets/img/case/elephantVizit.png";
+import granitCatalog from "../../../assets/img/case/granitCatalog.png";
+import mediaCorporat from "../../../assets/img/case/mediaCorporat.png";
+import noomblistMarket from "../../../assets/img/case/noomblistMarket.png";
+import sdCatalog from "../../../assets/img/case/sdCatalog.png";
+import sodoxCatalog from "../../../assets/img/case/sodoxCatalog.png";
+import wellCatalog from "../../../assets/img/case/wellCatalog.png";
 import {routes} from "../../routes/routes";
 
+export type casesDataType = {
+    id: string
+    type: string
+    routes: string
+    img: string
+}
+export type CasesDataType='market'|'visit'|'corporat'|'catalog'|'all'
 
-export const casesData= [{ routes:routes.caseRentClub,img:img1},
-    { routes:routes.caseRentClub,img:img2},
-    { routes:routes.caseRentClub,img:img3},
-    { routes:routes.caseRentClub,img:img4},
-    { routes:routes.caseRentClub,img:img5},
-    { routes:routes.caseRentClub,img:img6},
-    { routes:routes.caseRentClub,img:img7},
-    { routes:routes.caseRentClub,img:img8},
- ]
+export const casesData:any ={
+    ['market']: [
+        {id: '1', type: 'market', routes: routes.caseRentClub, img: rentMarket},
+        {id: '8', type: 'market', routes: routes.caseRentClub, img: noomblistMarket}],
+    ['visit']: [{id: '2', type: 'visit', routes: routes.caseRentClub, img: couchingVisit},
+        {id: '4', type: 'visit', routes: routes.caseRentClub, img: prosnowVisit},
+        {id: '5', type: 'visit', routes: routes.caseRentClub, img: elephantVizit},],
+    ['corporat']: [   {id: '3', type: 'corporat', routes: routes.caseRentClub, img: partyCorporat},
+        {id: '7', type: 'corporat', routes: routes.caseRentClub, img: mediaCorporat}],
+    ['catalog']: [{id: '9', type: 'catalog', routes: routes.caseRentClub, img: sdCatalog},
+        {id: '10', type: 'catalog', routes: routes.caseRentClub, img: sodoxCatalog},
+        {id: '11', type: 'catalog', routes: routes.caseRentClub, img: wellCatalog},
+        {id: '6', type: 'catalog', routes: routes.caseRentClub, img: granitCatalog},],
+    ['all']: [{id: '1', type: 'market', routes: routes.caseRentClub, img: rentMarket},
+    {id: '2', type: 'visit', routes: routes.caseRentClub, img: couchingVisit},
+    {id: '3', type: 'corporat', routes: routes.caseRentClub, img: partyCorporat},
+    {id: '4', type: 'visit', routes: routes.caseRentClub, img: prosnowVisit},
+    {id: '5', type: 'visit', routes: routes.caseRentClub, img: elephantVizit},
+    {id: '6', type: 'catalog', routes: routes.caseRentClub, img: granitCatalog},
+    {id: '7', type: 'corporat', routes: routes.caseRentClub, img: mediaCorporat},
+    {id: '8', type: 'market', routes: routes.caseRentClub, img: noomblistMarket},
+    {id: '9', type: 'catalog', routes: routes.caseRentClub, img: sdCatalog},
+    {id: '10', type: 'catalog', routes: routes.caseRentClub, img: sodoxCatalog},
+    {id: '11', type: 'catalog', routes: routes.caseRentClub, img: wellCatalog},
+]
+}
