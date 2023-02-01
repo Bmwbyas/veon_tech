@@ -8,9 +8,9 @@
     display: grid;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
     box-sizing: border-box;
-    width: 95%;
+   @include container();
     gap:30px;
-    margin: 0 auto;
+
     margin-bottom: 150px;
     justify-content: space-around;
     @media (max-width: 1020px) {
