@@ -1,0 +1,46 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  @include flex(column, start, start, wrap);
+  @include container();
+  width: 90% ;
+  .aboutUs {
+  margin-bottom: 84px;
+    @include text(16px,600)
+  }
+  .workTime{
+
+  }
+  .descHeader{
+@include text(28px,800);
+    margin: 30px 0 20px 0;
+  }
+  .desc{
+    display: grid;
+    grid-template-columns: minmax(150px,1fr) minmax(150px,1fr) minmax(150px,1fr) minmax(150px,1fr);
+    width: 100%;
+    vertical-align: baseline;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    @media (max-width: 1279px) {
+      grid-template-columns: minmax(150px,1fr) minmax(150px,1fr);
+    }
+    .descItem{
+      @include text(16px,600);
+      padding: 0 10px;
+      margin: 10px 10px;
+      line-height: 28px;
+      position: relative;
+      &:before{
+        content:'';
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        top: 3px;
+        left: -6px;
+        background-color: $activeColor;
+      }
+    }
+  }
+}

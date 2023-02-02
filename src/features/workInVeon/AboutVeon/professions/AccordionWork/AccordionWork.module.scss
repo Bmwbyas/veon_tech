@@ -1,0 +1,38 @@
+@import "../../../../../common/style/sass/variables";
+@import "../../../../../common/style/sass/mixins";
+
+.container {
+  @include flex(column, start, start, wrap);
+  width: 100%;
+  border-bottom: 2px solid #F0F0F0;
+  &:last-child{
+    border-bottom:none;
+  }
+  .title {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    .up{
+
+      padding: 5px;
+    }
+    .down{
+      padding: 5px;
+      transform: rotate(90deg);
+    }
+    &:hover{
+      transition: 0.5s;
+      background-color: $activeColor;
+      color: #fff;
+    }
+  }
+
+  .descContainer {
+    margin-top: 20px;
+    @include text(16px, 400);
+    .header {
+      @include text(24px, 800)
+    }
+  }
+}

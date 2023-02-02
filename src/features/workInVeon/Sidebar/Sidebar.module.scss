@@ -1,0 +1,57 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container{
+  @include flex(column, start, start, wrap);
+width: 100%;
+  .navBlock{
+    @include flex(column, start ,start, nowrap);
+     margin-bottom: 60px;
+    width: 100%;
+    .navItem{
+      cursor: pointer;
+      @include text(16px,400);
+      width: 100%;
+      margin-bottom: 3px ;
+      padding: 15px 25px 15px 25px;
+      background-color: #EAEAEA;
+    }
+    .activeNav{
+      color: white;
+      background-color:$activeColor
+    }
+  }
+  .respond{
+    @include flex(column, start ,start, nowrap);
+    @include text(16px,400);
+    padding: 20px;
+    margin-bottom: 55px;
+
+    background-color: #EAEAEA;
+    .respondHeader{
+      @include text(20px,800);
+      margin-bottom: 30px;
+    }
+    .respondDesc{
+      @include text(14px,400);
+      margin-bottom: 30px;
+    }
+  }
+  .cv{
+    background-color: #EAEAEA;
+    padding: 20px;
+    margin-bottom: 55px;
+    .cvHeader{
+      @include text(20px,800);
+      margin-bottom: 30px;
+    }
+    .cvContent{
+      @include text(16px,600);
+      padding-left: 30%;
+      cursor: pointer;
+      &:hover{
+        color: $activeColor;
+      };
+    }
+  }
+}

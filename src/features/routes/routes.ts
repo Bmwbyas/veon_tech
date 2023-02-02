@@ -6,5 +6,6 @@ export const routes={
     cases:'/cases',
     caseRentClub:'/cases/case',
     services:'/services',
-    bonuses:'/bonuses'
+    bonuses:'/bonuses',
+    workInVeon:'/work-in-veon'
 }

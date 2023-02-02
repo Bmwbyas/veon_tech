@@ -4,6 +4,7 @@
   "homepage": "https://bmwbyas.github.io/veon_tech_by/",
   "private": true,
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "@emotion/react": "^11.10.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -51,6 +52,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+
   }
 }

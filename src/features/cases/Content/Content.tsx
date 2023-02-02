@@ -8,19 +8,14 @@ export const Content = memo(() => {
 
     const [filter, setFilter] = React.useState<CasesDataType>('market')
 
-    const onChangeFilter =useCallback( (value: CasesDataType) => {
+    const onChangeFilter = useCallback((value: CasesDataType) => {
         setFilter(value)
-        console.log(value,'value')
-    },[])
-
-
-
-
-
+        console.log(value, 'value')
+    }, [])
 
     return (
         <>
-            <CasesNav filter={filter} onChangeFilter={onChangeFilter}  />
+            <CasesNav filter={filter} onChangeFilter={onChangeFilter}/>
             <CasesContent filter={filter}/>
         </>
     );

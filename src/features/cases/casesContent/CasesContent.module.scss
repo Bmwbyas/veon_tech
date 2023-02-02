@@ -22,8 +22,12 @@
       width: auto;
       margin: 0   10px;
     }
-    .imgContainer {
 
+    .imgContainer {
+      &:hover{
+        transition: 0.3s;
+        transform: scale(1.05);
+      }
       .img {
         min-width: 300px;
         width:100%;

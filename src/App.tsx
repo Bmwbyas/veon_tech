@@ -14,6 +14,7 @@ import {Cases} from "./features/cases/Cases";
 import {GetInTorch} from "./common/components/getInTorch/GetInTorch";
 import {ScrollToTop} from "./common/components/ScrollToTop/ScrollToTop";
 import {Contacts} from "./features/contacts/Contacts";
+import {WorkInVeon} from "./features/workInVeon/WorkInVeon";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                    <Route path={routes.services} element={<Services/>}/>
                    <Route path={routes.bonuses} element={<Bonuses/>}/>
                    <Route path={routes.contacts} element={<Contacts/>}/>
+                   <Route path={routes.workInVeon} element={<WorkInVeon/>}/>
                </Routes>
         <Footer/>
     </div>

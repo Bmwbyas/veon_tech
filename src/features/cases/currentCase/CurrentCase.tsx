@@ -7,6 +7,8 @@ import {caseSimilar, taskWebData, workData} from "./data";
 import ImageShow from "./ImageShow/ImageShow";
 import {Title} from "../../../common/components/title/Title";
 import {GetInTorchCase} from "./getInTorch/GetInTorchCase";
+import {NavLink} from "react-router-dom";
+import {routes} from "../../routes/routes";
 
 
 export const CurrentCase = () => {
@@ -68,12 +70,12 @@ export const CurrentCase = () => {
                         {caseSimilar.map((c: any) => {
 
                             const lastItem = c.id === 4
-                            return <div key={c.id} className={s.simularCase} style={c.img}>
+                            return <NavLink to={routes.cases} key={c.id} className={s.simularCase} style={c.img}>
                                 {lastItem && <div className={s.lastSimular}>
                                     Здесь может быть ваш проект
                                 </div>}
 
-                            </div>
+                            </NavLink>
                         })}
 
                     </div>
