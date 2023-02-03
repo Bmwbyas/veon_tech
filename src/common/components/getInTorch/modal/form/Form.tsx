@@ -27,7 +27,7 @@ export const FormComponent: React.FC<FormComponentPropsType> = ({closemodal}) =>
 
             <p className={s.textareaWrapper}>Нажимая на кнопку «Отправить», вы даете свое согласие на обработку
                 персональных данных
-                в соответствии с целями указанными в <NavLink to={routes.privacyPolicy}>Политике обработки персональных данных</NavLink></p>
+                в соответствии с целями указанными в <NavLink to={routes.privacyPolicy} onClick={closemodal}>Политике обработки персональных данных</NavLink></p>
 
             <button className={s.button} type={"submit"} name={'send message'}>ОТПРАВИТЬ</button>
 

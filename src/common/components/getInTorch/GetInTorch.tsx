@@ -9,8 +9,10 @@ export const GetInTorch = () => {
         setView(true)
     }
     const closeModal = () => {
-        setView(false)
+        setView(!view)
+
     }
+
 
     return (<>
             {!view&&<div className={s.Container}>
@@ -20,7 +22,7 @@ export const GetInTorch = () => {
                     </button>
                 </div>
             }
-            <Chat view={view} closeModal={closeModal}/>
+            <Chat view={view}   closeModal={closeModal}/>
         </>
     );
 };
