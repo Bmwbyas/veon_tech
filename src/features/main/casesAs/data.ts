@@ -12,6 +12,13 @@ export type CasesDataType={
 
     img:ExampleType&{backgroundRepeat: string}|string;
 }
+export const imgddfdgsgd ={
+    backgroundImage: 'url(' + case4 + ')',
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+}
+
 
 export const casesData:CasesDataType[]=[
     {
@@ -69,12 +76,6 @@ export const casesData:CasesDataType[]=[
         //     backgroundPosition: 'center',
         //     backgroundRepeat: 'no-repeat'
         // },
-        img:case4
+        img:imgddfdgsgd
     },
 ]
-export const imgddfdgsgd ={
-    backgroundImage: 'url(' + case4 + ')',
-    backgroundSize: 'contain',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-}
