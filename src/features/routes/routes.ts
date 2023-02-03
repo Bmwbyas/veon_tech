@@ -7,5 +7,6 @@ export const routes={
     caseRentClub:'/cases/case',
     services:'/services',
     bonuses:'/bonuses',
-    workInVeon:'/work-in-veon'
+    workInVeon:'/work-in-veon',
+    privacyPolicy:'/privacyPolicy'
 }

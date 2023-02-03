@@ -15,6 +15,7 @@ import {GetInTorch} from "./common/components/getInTorch/GetInTorch";
 import {ScrollToTop} from "./common/components/ScrollToTop/ScrollToTop";
 import {Contacts} from "./features/contacts/Contacts";
 import {WorkInVeon} from "./features/workInVeon/WorkInVeon";
+import PolityConfidence from "./features/polityConfidence/PolityConfidence";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
                    <Route path={routes.bonuses} element={<Bonuses/>}/>
                    <Route path={routes.contacts} element={<Contacts/>}/>
                    <Route path={routes.workInVeon} element={<WorkInVeon/>}/>
+                   <Route path={routes.privacyPolicy} element={<PolityConfidence/>}/>
                </Routes>
         <Footer/>
     </div>

@@ -14,7 +14,7 @@ export const Chat:React.FC<ChatType> = ({closeModal,view}) => {
             <div className={s.btnCont} >
                 <button  className={s.bth} >
                     <div className={s.header}  >Пишите, отвечу лично-</div>
-                    <div className={s.text}>Александр Иванцов, sales-manager</div>
+                    <div className={s.text}>Ксения, специалист по работе с клиентами</div>
                 </button>
             </div>
             <div className={s.content}>

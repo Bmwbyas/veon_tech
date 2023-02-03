@@ -1,0 +1,11 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+.container{
+@include container();
+  h6{
+    @include text(30px,800)
+  }
+  margin: 150px auto;
+  line-height: 30px;
+}
