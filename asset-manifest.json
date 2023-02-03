@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/veon_tech_by/static/css/main.aefc3c66.css",
-    "main.js": "/veon_tech_by/static/js/main.bfd5543c.js",
+    "main.css": "/veon_tech_by/static/css/main.c1d2f3e7.css",
+    "main.js": "/veon_tech_by/static/js/main.1cb0a3ed.js",
     "static/js/787.28cb0dcd.chunk.js": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js",
     "static/media/example3.png": "/veon_tech_by/static/media/example3.8bbbc705aed7f869c30d.png",
     "static/media/example1.png": "/veon_tech_by/static/media/example1.adb8c25cd63b14110903.png",
@@ -25,6 +25,8 @@
     "static/media/WooCommerce.png": "/veon_tech_by/static/media/WooCommerce.58877db9732fe100381c.png",
     "static/media/a5.png": "/veon_tech_by/static/media/a5.d53c335c4eaf06727b50.png",
     "static/media/a1.png": "/veon_tech_by/static/media/a1.b66384c1abc440353b9c.png",
+    "static/media/managerImg.jpg": "/veon_tech_by/static/media/managerImg.0151e8d26e03ebb0a2ad.jpg",
+    "static/media/logoModal.jpg": "/veon_tech_by/static/media/logoModal.f0a3de5056b199cbfec3.jpg",
     "static/media/a2.png": "/veon_tech_by/static/media/a2.c382b510a1c3241240af.png",
     "static/media/bigcommerce.png": "/veon_tech_by/static/media/bigcommerce.a08d4d89d9be9ac617e9.png",
     "static/media/a3.png": "/veon_tech_by/static/media/a3.42b19eb0ac41705a305c.png",
@@ -61,12 +63,12 @@
     "static/media/magento.svg": "/veon_tech_by/static/media/magento.0937555253fc0d35b8f3fb0d8587b5bb.svg",
     "static/media/npm.svg": "/veon_tech_by/static/media/npm.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/vuejs.svg": "/veon_tech_by/static/media/vuejs.a9ef3938d4960ac238e9c64d78783931.svg",
-    "main.aefc3c66.css.map": "/veon_tech_by/static/css/main.aefc3c66.css.map",
-    "main.bfd5543c.js.map": "/veon_tech_by/static/js/main.bfd5543c.js.map",
+    "main.c1d2f3e7.css.map": "/veon_tech_by/static/css/main.c1d2f3e7.css.map",
+    "main.1cb0a3ed.js.map": "/veon_tech_by/static/js/main.1cb0a3ed.js.map",
     "787.28cb0dcd.chunk.js.map": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aefc3c66.css",
-    "static/js/main.bfd5543c.js"
+    "static/css/main.c1d2f3e7.css",
+    "static/js/main.1cb0a3ed.js"
   ]
 }
