@@ -1,8 +1,10 @@
 import React from 'react';
 import s from './HeaderMain.module.scss'
 import {FormComponent} from "../../../common/components/getInTorch/modal/form/Form";
+import logo from "../../../assets/img/imgMain/logo.png";
 
 export const HeaderMain = () => {
+
     const [view, setView] = React.useState(false)
     const openModal = () => {
         setView(true)
@@ -24,8 +26,8 @@ export const HeaderMain = () => {
                     </div>
 
             </div>
-            <div className={s.animation}>
-                ANIMATION
+            <div className={s.animation} >
+             <img src={logo} alt={'logo'}/>
             </div>
 
         </div>

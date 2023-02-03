@@ -24,13 +24,20 @@
       }
     }
     .nav {
+      cursor: pointer;
       position: relative;
       padding: 10px;
       margin: 0 15px;
       text-transform: uppercase;
       text-decoration: none;
       color: #9a9a9a;
-      @include text(16px, 600)
+      @include text(16px, 600);
+      transition: 0.5s;
+      &:hover{
+        color:$activeColor;
+        transition: 0.5s;
+      }
+
     }
 
     .active {

@@ -6,7 +6,7 @@ import {CasesDataType} from "../casesContent/data";
 
 export const Content = memo(() => {
 
-    const [filter, setFilter] = React.useState<CasesDataType>('market')
+    const [filter, setFilter] = React.useState<CasesDataType>('all')
 
     const onChangeFilter = useCallback((value: CasesDataType) => {
         setFilter(value)
