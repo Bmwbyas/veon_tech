@@ -1,0 +1,40 @@
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+.container{
+  @include flex(column, center, center, wrap);
+  @include container();
+    .header{
+      width: 100%;
+      @include text(28px,700);
+      margin: 40px 0 20px 0;
+    }
+  .textHeader{
+    width: 100%;
+  }
+
+  .headerBonus{
+
+    @include text(40px,900);
+    text-align: center;
+    margin: 100px 0 150px 0;
+    span{
+      color: $activeColor;
+    }
+
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 7px;
+      left: 50%;
+      transform: translate(-50%,50% );
+      bottom: -15px;
+      background-color: $activeColor;
+    }
+  }
+  .descVeon{
+    margin: 50px 0 80px 0;
+  }
+}

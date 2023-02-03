@@ -1,0 +1,102 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e9fce5;
+padding: 150px 0 100px 0;
+  .wrapper {
+    @include container();
+    width: 90%;
+    @include flex(row, start, center, wrap);
+    gap: 50px;
+
+    .bonusesItemContainer {
+      width: 100%;
+      max-width: 458px;
+      min-height: 501px;
+      @include flex(column, center, start, wrap);
+      position: relative;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 2px 4px 31px rgba(0, 0, 0, 0.25);
+      border-radius: 17px;
+      @include text(17px,400);
+      .numberItem {
+        position: absolute;
+        text-align: center;
+        @include text(32px, 600);
+        color: white;
+        width: 65px;
+        height: 65px;
+        padding-top: 10px;
+        left: -28px;
+        top: -32px;
+        background-color: $activeColor;
+        border-radius: 50%;
+      }
+
+      .iconContainer {
+        position: absolute;
+        top: -50px;
+        width: 101px;
+        height: 101px;
+        border-radius: 50%;
+        border: 2px solid $activeColor;
+        background-color: #ffffff;
+
+        .icon {
+          position: absolute;
+          width: 65px;
+          height: 65px;
+          left: 16px;
+          top: 15px;
+
+          background: #FFFFFF;
+
+
+          //&:before {
+          //  content: '';
+          //
+          //  z-index: 0;
+          //  position: absolute;
+          //  width: 101px;
+          //  height: 101px;
+          //  top: -70px;
+          //  left: 50%;
+          //  transform: translate(-50%, 50%);
+          //  border-radius: 50%;
+          //  border: 2px solid $activeColor;
+          //}
+        }
+      }
+      .headerItem{
+        @include text(32px,700);
+        margin-top: 150px;
+      }
+      .secondHeaderItem{
+        @include text(20px,700);
+        opacity: 0.4;
+        margin-bottom: 50px;
+      }
+      .text{
+        @include container();
+        letter-spacing: 0.005em;
+        line-height: 178.5%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .desc{
+        @include text(12px,400);
+      }
+      .buttonCont{
+        position: absolute;
+        bottom: 0;
+      }
+
+
+    }
+
+  }
+}
