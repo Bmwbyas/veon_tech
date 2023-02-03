@@ -30,11 +30,10 @@
   right: 0;
   top:50%;
   z-index: 12345678;
-  width: 300px;
+  width: 330px;
 
   background-color: #6EEC4E;
-  padding: 10px 10px 10px 40px;
-
+  padding: 10px 10px 10px 60px;
   .bth{
     @include flex(row, center, start, wrap);
     @include btnDeleteStyle();
@@ -52,12 +51,15 @@
     &:before{
       content: '';
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      top: 6px;
-      left: -27px;
-      background-color: #D9D9D9;
+      top: -4px;
+      left: -49px;
+      background-image: url("../../../../assets/img/managerImg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }

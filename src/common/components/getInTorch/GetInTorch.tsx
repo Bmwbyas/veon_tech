@@ -16,7 +16,7 @@ export const GetInTorch = () => {
             {!view&&<div className={s.Container}>
                     <button className={s.bth} onClick={openModal}>
                         <div className={s.header}>Пишите, отвечу лично-</div>
-                        <div className={s.text}>Александр Иванцов, sales-manager</div>
+                        <div className={s.text}>Ксения, специалист по работе с клиентами </div>
                     </button>
                 </div>
             }
