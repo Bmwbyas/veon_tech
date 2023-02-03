@@ -4,7 +4,7 @@ import {socialIcon} from "./data";
 import logo from '../../assets/img/imgFooter/biglogo.png'
 
 export const Footer = () => {
-    
+
 
     return (
         <div className={s.wrap}>

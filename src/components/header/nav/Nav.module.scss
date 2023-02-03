@@ -2,13 +2,19 @@
 @import "src/common/style/sass/mixins";
 
 .navContainer {
-  @include flex(row, center, space-between,wrap);
-margin-left:50px ;
+  @include flex(row, center, space-between, wrap);
+  margin-left: 50px;
+  @media (max-width: 1100px) {
+    @include flex(column, center, center, nowrap);
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0;
+  }
 
   .navItem {
     position: relative;
     padding: 10px;
-    margin-left: 1.5rem  ;
+    margin-left: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
     color: $textColor;
@@ -18,7 +24,24 @@ margin-left:50px ;
       margin-left: 1rem;
 
     }
-    .navItemTitle{
+    @media (max-width: 1100px) {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 30px;
+      padding: 20px;
+      color: white;
+
+
+      &:hover {
+        color:$activeColor;
+        background-color:#FFFFFF;
+      }
+    ;
+    }
+
+    .navItemTitle {
       padding: 40px 0;
     }
 

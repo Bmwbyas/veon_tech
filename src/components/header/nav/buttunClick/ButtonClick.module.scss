@@ -18,6 +18,13 @@
     margin-left: 0.5rem;
 
   }
+  @media (max-width: 1100px) {
+    border: none;
+    border-radius:0;
+    width: 100%;
+    margin-left:  0;
+    font-size: 20px;
+  }
 
   &:active,
   &:hover{
