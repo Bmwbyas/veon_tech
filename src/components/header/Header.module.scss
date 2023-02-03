@@ -1,8 +1,11 @@
 @import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
 .header{
+
   background: white;
 
 .wrapper {
+
   position: fixed;
   display: inline-block;
   z-index: 9999;

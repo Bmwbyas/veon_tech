@@ -2,6 +2,7 @@
 @import "../../common/style/sass/mixins";
 
 .container{
+  @include maxWidth();
   @include flex(column, center, center, wrap);
   @include container();
     .header{

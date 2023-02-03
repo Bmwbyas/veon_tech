@@ -62,7 +62,10 @@ export const CurrentCase = () => {
 
 
                 </section>
-                <GetInTorchCase/>
+            </div>
+            <GetInTorchCase/>
+            <div className={s.casesContainer}>
+
                 <section>
                     <div className={s.simularHeader}>Похожие кейсы:</div>
                     <div className={s.simularCaseContainer}>

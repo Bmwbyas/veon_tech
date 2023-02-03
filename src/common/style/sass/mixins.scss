@@ -2,6 +2,10 @@
   font-weight: $fontWeight;
   font-size: $fontSize;
 }
+@mixin maxWidth(){
+  max-width: 1920px;
+  margin: 0 auto;
+}
 @mixin textTitle(){
   font-weight: 800;
   font-size: 40px;

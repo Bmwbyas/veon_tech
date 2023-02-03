@@ -1,6 +1,7 @@
 @import "../../common/style/sass/variables";
 @import "../../common/style/sass/mixins";
 .container{
+  @include maxWidth();
   @include flex(row, start  , start, wrap);
   @include container();
   margin-top: 84px;

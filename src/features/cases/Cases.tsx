@@ -7,8 +7,10 @@ export const Cases = () => {
     return (
         <>
             <Title header={'Кейсы'} desc={'ГЛАВНАЯ > КЕЙСЫ'}/>
-            <div className={s.container}>
-                <Content/>
+            <div className={s.wrap}>
+                <div className={s.container}>
+                    <Content/>
+                </div>
             </div>
         </>
     );

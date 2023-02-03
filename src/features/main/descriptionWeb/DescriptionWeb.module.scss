@@ -1,9 +1,12 @@
 @import "../../../common/style/sass/variables";
 @import "../../../common/style/sass/mixins";
-
-.container {
-  padding-bottom: 80px;
+.wrapperContainer{
   background-color: #e9fce4;
+.container {
+  max-width: 1920px ;
+  margin: 0 auto  ;
+  padding-bottom: 80px;
+
 
   .wrapper {
     @include flex(row, start, start, wrap);
@@ -51,4 +54,5 @@
       }
     }
   }
+}
 }

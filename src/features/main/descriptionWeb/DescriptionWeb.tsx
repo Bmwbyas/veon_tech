@@ -6,6 +6,7 @@ import {CurrentDev} from "./currentDev/CurrentDev";
 export const DescriptionWeb = () => {
 
     return (
+        <div className={s.wrapperContainer}>
         <div className={s.container}>
             <div className={s.wrapper}>
             <div className={s.desc}>
@@ -23,6 +24,7 @@ export const DescriptionWeb = () => {
                 {devData.map((d,index)=><CurrentDev key={index} D={d}/>)}
             </div>
             </div>
+        </div>
         </div>
     );
 };
