@@ -6,6 +6,7 @@ export const DescriptionAboutUs = () => {
     return (
         <div className={s.cotainer}>
             <div className={s.dataContainer}>
+                <h1 className={s.headDecs}>Почему нам доверяют?</h1>
                 {descData.map((data, index) => <div key={index}>
                     <div className={s.header}><span className={s.span}>{data.header}</span></div>
                     <div className={s.text}>{data.desc}</div>

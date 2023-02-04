@@ -13,12 +13,12 @@
   .dataContainer {
     @include flex(column, start, start, wrap);
     padding: 20px;
-
+    .headDecs{
+      margin-top: 10px;
+    }
     .header {
-
-text-align: center;
       margin-bottom: 20px;
-      @include text(40px, 900);
+      @include text(24px, 800);
       color: #000;
 
       .span{
@@ -27,10 +27,10 @@ text-align: center;
         &:before {
           position: absolute;
           left: -6px;
-          top: 8px;
+          top: 0px;
           content: '';
           width: 4px;
-          height: 35px;
+          height: 100%;
           background-color: $activeColor;
         }
       }
@@ -43,10 +43,12 @@ text-align: center;
   }
 
   .cotainerDecs {
-    @include flex(column, center, center, wrap);
+    @include flex(column, center, start, wrap);
+
     background: #EDEDED;
     border-radius: 17px;
     padding: 20px;
+    padding-top: 40px;
     .headerDesc {
       text-align: center;
       @include text(40px, 900);
