@@ -18,6 +18,7 @@ import {WorkInVeon} from "./features/workInVeon/WorkInVeon";
 import PolityConfidence from "./features/polityConfidence/PolityConfidence";
 import Webdev from "./features/services/webDev/Webdev";
 import Websupport from "./features/services/webSupport/WebSupport";
+import {Nda} from "./features/nda/NDA";
 
 
 
@@ -39,6 +40,7 @@ function App() {
                    <Route path={routes.privacyPolicy} element={<PolityConfidence/>}/>
                    <Route path={routes.webDev} element={<Webdev/>}/>
                    <Route path={routes.webSupport} element={<Websupport/>}/>
+                   <Route path={routes.nda} element={<Nda/>}/>
                </Routes>
         <Footer/>
     </div>

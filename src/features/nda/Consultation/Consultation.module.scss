@@ -1,0 +1,26 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  @include container();
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 19px;
+  border:1px solid #6eec4e;
+  display: grid;
+  grid-template-columns: minmax(200px,2fr) minmax(200px,1.5fr) minmax(200px,1fr);
+  @media (max-width: 1100px) {
+    grid-template-columns: minmax(200px,2fr)
+  }
+  justify-content: center;
+  align-items: center;
+  .head{
+    padding: 20px;
+  }
+  .logoContainer{
+    @include flex(column, center, center, wrap);
+    .logo{
+      margin-bottom: 10px;
+    }
+  }
+}

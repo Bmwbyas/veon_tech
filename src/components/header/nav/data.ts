@@ -6,7 +6,7 @@ export type DataType={
 }
 export const aboutUsData:DataType[]=[
     {title:'О НАШЕЙ КОМПАНИИ',route:routes.aboutUs},
-    {title:'NDA',route:routes.aboutUs},
+    {title:'NDA',route:routes.nda},
     {title:'ВАКАНСИИ',route:routes.workInVeon},
 ]
 export const servicesData:DataType[]=[

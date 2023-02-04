@@ -10,5 +10,6 @@ export const routes={
     workInVeon:'/work-in-veon',
     privacyPolicy:'/privacyPolicy',
     webDev:'/web-dev',
-    webSupport:'/webSupport'
+    webSupport:'/webSupport',
+    nda:'/nda'
 }

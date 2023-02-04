@@ -1,0 +1,41 @@
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.container {
+  @include maxWidth();
+  @include flex(row, center, space-between, wrap);
+  padding:50px 0;
+  gap: 30px;
+@include container();
+  .desc {
+    width:calc(50% - 30px);
+@media (max-width: 1100px) {
+  width: 100%;
+}
+   .text{
+     position: relative;
+     line-height: 35px;
+     &:before{
+       position: absolute;
+       content: '';
+       left: -10px;
+       width: 5px;
+       height: 100%;
+       background-color: $activeColor;
+     }
+   }
+  }
+
+  .photo {
+    width: 50%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+    margin:30px 0;
+    img{
+      width: 100%;
+     height: auto;
+      object-fit: contain;
+    }
+  }
+}
