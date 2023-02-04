@@ -6,12 +6,12 @@
   @include flex(column, center, center, wrap);
   background-color: $bgColor;
 
-  margin: 0 20px;
-  padding: 20px;
+  margin: 0;
+  padding: 40px 0;
 
   font-size: 30px;
   .textDesc {
-    text-transform: uppercase;
+
     color: $activeColor;
   }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import s from './Map.module.scss'
 import map from "../../../assets/img/iconContacts/map.png";
+import {NavLink} from "react-router-dom";
+import {routes} from "../../routes/routes";
 
 export const Map = () => {
     const mapImg = {
@@ -32,7 +34,7 @@ export const Map = () => {
                     </div>
                     <p className={s.p}>Нажимая на кнопку «Отправить», вы даете свое согласие на обработку
                         персональных данных
-                        в соответствии с целями указанными в <span className={s.span}>Политике обработки персональных данных</span>
+                        в соответствии с целями указанными в <NavLink to={routes.privacyPolicy} className={s.span}>Политике обработки персональных данных</NavLink>
                     </p>
                     <div className={s.buttonCont}>
                         <button className={s.button} type={"submit"} name={'send message'}>ОТПРАВИТЬ</button>

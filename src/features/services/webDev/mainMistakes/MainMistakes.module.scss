@@ -1,0 +1,59 @@
+@import "../../../../common/style/sass/variables";
+@import "../../../../common/style/sass/mixins";
+
+.container {
+  background-color: #e9fce5;
+
+  .wrap {
+    @include maxWidth();
+    @include container();
+    @include flex(column, center, center, wrap);
+    padding: 100px 0;
+
+    .containerMistakes {
+
+      @include flex(row, start, center, wrap);
+      gap: 40px;
+
+      .namesTechnologies {
+        @include flex(column, start, center, wrap);
+        width: 35%;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+        .nameTech {
+          width: 100%;
+          text-align: start;
+          position: relative;
+          margin-bottom: 10px;
+          padding: 20px;
+          @include text(20px, 400);
+          background-color: $activeColor;
+          border-radius: 10px;
+          border: 1px solid $activeColor;
+          color: white;
+          cursor: pointer;
+          transition:all 0.5s;
+        }
+
+        .active {
+            color: $activeColor;
+            background-color: white;
+          transition:all 0.5s;
+        }
+      }
+
+      .descContainer {
+
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        @include flex(column, center, start, wrap);
+        line-height: 30px;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

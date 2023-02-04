@@ -7,7 +7,7 @@ import {Main} from "./features/main/Main";
 import {routes} from "./features/routes/routes";
 import {AboutUs} from "./features/aboutUs/AboutUs";
 import {CurrentCase} from "./features/cases/currentCase/CurrentCase";
-import {Services} from "./features/services/Services";
+
 import {Bonuses} from "./features/bonuses/Bonuses";
 
 import {Cases} from "./features/cases/Cases";
@@ -16,6 +16,10 @@ import {ScrollToTop} from "./common/components/ScrollToTop/ScrollToTop";
 import {Contacts} from "./features/contacts/Contacts";
 import {WorkInVeon} from "./features/workInVeon/WorkInVeon";
 import PolityConfidence from "./features/polityConfidence/PolityConfidence";
+import Webdev from "./features/services/webDev/Webdev";
+import Websupport from "./features/services/webSupport/WebSupport";
+
+
 
 function App() {
   return (
@@ -29,11 +33,12 @@ function App() {
                    <Route path={routes.aboutUs} element={<AboutUs/>}/>
                    <Route path={routes.caseRentClub} element={<CurrentCase/>}/>
                    <Route path={routes.cases} element={<Cases/>}/>
-                   <Route path={routes.services} element={<Services/>}/>
                    <Route path={routes.bonuses} element={<Bonuses/>}/>
                    <Route path={routes.contacts} element={<Contacts/>}/>
                    <Route path={routes.workInVeon} element={<WorkInVeon/>}/>
                    <Route path={routes.privacyPolicy} element={<PolityConfidence/>}/>
+                   <Route path={routes.webDev} element={<Webdev/>}/>
+                   <Route path={routes.webSupport} element={<Websupport/>}/>
                </Routes>
         <Footer/>
     </div>

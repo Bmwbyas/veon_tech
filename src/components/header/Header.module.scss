@@ -5,6 +5,7 @@
   position: fixed;
   display: inline-block;
   z-index: 9999;
+  transition: all 0.5s;
 
   .wrapper {
     display: block;
@@ -48,10 +49,10 @@
   }
 
   .burgerContainer {
-    display: none;
+    display: none; transition: all 0.5s;
     @media (max-width: 1100px) {
       display: block;
-
+      transition: all 0.5s;
     }
     .burger {
 
@@ -137,6 +138,7 @@
     }
 
     .vievBurger {
+      transition: all 0.5s;
       @media (max-width: 1060px) {
         transform: translate(-100px, -100px);
       }
@@ -147,6 +149,7 @@
     background-color: $activeColor;
     top:0;
     color:white;
+    transition: all 0.5s;
   }
   .navActive{
     display: none;

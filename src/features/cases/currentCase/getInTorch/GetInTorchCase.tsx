@@ -2,7 +2,14 @@ import React from 'react';
 import s from "./GetInTorchCases.module.scss";
 import {Modal} from "../../../../common/components/getInTorch/modal/Modal";
 
-export const GetInTorchCase = () => {
+type GetInTorchCaseType={
+    text?:string
+    firstSpan?:string
+    middleText?:string
+    secondSpan?:string
+    afterText?:string
+}
+export const GetInTorchCase:React.FC<GetInTorchCaseType> = ({text,firstSpan,secondSpan,middleText,afterText}) => {
     const [view, setView] = React.useState(false)
     const openModal = () => {
         setView(true)
@@ -13,7 +20,7 @@ export const GetInTorchCase = () => {
     return (
         <div className={s.wrap}>
         <section className={s.decsContainer}>
-            <div>ХОТИТЕ <span className={s.textDesc}>ТАК ЖЕ? </span>МЫ <span>ПОМОЖЕМ!</span></div>
+            <div>{text} <span className={s.textDesc}>{firstSpan} </span>{middleText} <span>{secondSpan}</span>{afterText}</div>
             <button onClick={openModal}  className={s.buttonDesc}>Заказать звонок</button>
             <Modal view={view} closeModal={closeModal}/>
         </section>

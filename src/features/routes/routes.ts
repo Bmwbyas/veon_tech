@@ -8,5 +8,7 @@ export const routes={
     services:'/services',
     bonuses:'/bonuses',
     workInVeon:'/work-in-veon',
-    privacyPolicy:'/privacyPolicy'
+    privacyPolicy:'/privacyPolicy',
+    webDev:'/web-dev',
+    webSupport:'/webSupport'
 }

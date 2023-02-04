@@ -15,7 +15,7 @@ export type casesDataType = {
     id: string
     type: string
     routes: string
-    img: string
+    img: any
 }
 export type CasesDataType='market'|'visit'|'corporat'|'catalog'|'all'
 

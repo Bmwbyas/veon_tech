@@ -10,7 +10,7 @@
     height: 100vh;
     margin-left: 0;
   }
-
+  transition: all 0.5s;
   .navItem {
     position: relative;
     padding: 10px;
@@ -19,6 +19,7 @@
     text-decoration: none;
     color: $textColor;
     font-size: 20px;
+    transition: all 0.5s;
     @media (max-width: 1540px) {
       font-size: 16px;
       margin-left: 1rem;

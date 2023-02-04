@@ -63,7 +63,7 @@ export const CurrentCase = () => {
 
                 </section>
             </div>
-            <GetInTorchCase/>
+            <GetInTorchCase text={'ХОТИТЕ'} firstSpan={'ТАК ЖЕ?'} middleText={'МЫ ПОМОЖЕМ'} />
             <div className={s.casesContainer}>
 
                 <section>

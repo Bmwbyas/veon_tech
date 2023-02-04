@@ -30,6 +30,69 @@
       position: relative;
       //width: 100%;
       //height: 100%;
+      .hower{
+        opacity: 0  ;
+        position: absolute;
+        @include flex(column, center, center, wrap);
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          opacity: 1;
+          transition: 0.5s;
+
+          .workTitle {
+            color: white;
+            width: 80%;
+            position: relative;
+            font-weight: 800;
+            z-index: 1;
+            padding: 20px;
+            padding-left: 100px;
+            transition: all 0.5s;
+          }
+
+          .workDesc {
+            color: white;
+            width: 80%;
+            position: relative;
+            padding: 20px;
+            padding-left: 100px;
+            z-index: 1;
+            margin-bottom: 30px;
+            transition: all 0.5s ;
+          }
+
+          .buttonWork {
+            color: white;
+            position: relative;
+            background-color: transparent;
+            @include text(28px, 600);
+            text-transform: uppercase;
+            border: none;
+            z-index: 1;
+            margin: 0 auto;
+            cursor: pointer;
+            &:hover {
+              color: $activeColor;
+            }
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            background: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            opacity: 0.8;
+            border-radius: 17px;
+          }
+        }
+      }
 
 
       .imgContainer {
@@ -47,9 +110,9 @@
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
           object-fit: contain;
-          &:hover {
-            transform: scale(1.1);
-          }
+          //&:hover {
+          //  transform: scale(1.1);
+          //}
         ;
         }
 
