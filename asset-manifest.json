@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/veon_tech_by/static/css/main.0ada2c27.css",
+    "main.css": "/veon_tech_by/static/css/main.a0450fe9.css",
     "main.js": "/veon_tech_by/static/js/main.f2e6ce35.js",
     "static/js/787.28cb0dcd.chunk.js": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js",
     "static/media/example3.png": "/veon_tech_by/static/media/example3.8bbbc705aed7f869c30d.png",
@@ -63,12 +63,12 @@
     "static/media/magento.svg": "/veon_tech_by/static/media/magento.0937555253fc0d35b8f3fb0d8587b5bb.svg",
     "static/media/npm.svg": "/veon_tech_by/static/media/npm.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/vuejs.svg": "/veon_tech_by/static/media/vuejs.a9ef3938d4960ac238e9c64d78783931.svg",
-    "main.0ada2c27.css.map": "/veon_tech_by/static/css/main.0ada2c27.css.map",
+    "main.a0450fe9.css.map": "/veon_tech_by/static/css/main.a0450fe9.css.map",
     "main.f2e6ce35.js.map": "/veon_tech_by/static/js/main.f2e6ce35.js.map",
     "787.28cb0dcd.chunk.js.map": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ada2c27.css",
+    "static/css/main.a0450fe9.css",
     "static/js/main.f2e6ce35.js"
   ]
 }
