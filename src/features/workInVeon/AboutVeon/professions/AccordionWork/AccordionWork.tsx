@@ -28,7 +28,7 @@ export const AccordionWork: React.FC<AccordionWorkType> = ({data}) => {
                         Обязанности:
                     </h2>
                     <ul>
-                        {data.resposibility.map(r=><li>{r}</li>)}
+                        {data.resposibility.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
                     <h2 className={s.header}>
                         Требования:
@@ -41,19 +41,19 @@ export const AccordionWork: React.FC<AccordionWorkType> = ({data}) => {
                         Минимальные знания, которые мы ждём от кандидата:
                     </h2>
                     <ul>
-                        {data.knowledge.map(r=><li>{r}</li>)}
+                        {data.knowledge.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
                     <h2 className={s.header}>
                         Будет преимуществом:
                     </h2>
                     <ul>
-                        {data.advantage.map(r=><li>{r}</li>)}
+                        {data.advantage.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
                     <h2 className={s.header}>
                         Условия:
                     </h2>
                     <ul>
-                        {data.terms.map(r=><li>{r}</li>)}
+                        {data.terms.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
                 </div>}
 

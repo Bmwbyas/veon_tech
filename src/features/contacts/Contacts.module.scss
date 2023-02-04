@@ -3,7 +3,7 @@
 
 .container {
   @include flex(column, center, center, wrap);
-
+@include maxWidth();
   .contactContainer {
     @include flex(row, start, center, wrap);
 
