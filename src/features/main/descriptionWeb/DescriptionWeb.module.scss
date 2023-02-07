@@ -6,11 +6,11 @@
   max-width: 1920px ;
   margin: 0 auto  ;
   padding-bottom: 80px;
-
+  @include container();
 
   .wrapper {
     @include flex(row, start, space-between, wrap);
-    @include container();
+
 
     padding-top: 70px;
 

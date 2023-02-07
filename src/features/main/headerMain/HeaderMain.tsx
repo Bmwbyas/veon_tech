@@ -35,8 +35,8 @@ export const HeaderMain = () => {
                 </div>
 
             </div>
-            <div style={imgLogo} className={s.animation}>
-                {/*<img src={logo} alt={'logo'}/>*/}
+            <div  className={s.animation}>
+                <img src={logo} alt={'logo'}/>
             </div>
 
         </div>

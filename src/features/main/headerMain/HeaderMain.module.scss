@@ -3,7 +3,7 @@
 
 .container {
   @include maxWidth();
-  @include flex(row, center, center, nowrap);
+  @include flex(row, center, space-between, nowrap);
   @include container();
   min-height: 25vh;
   background-color: white;
@@ -11,7 +11,7 @@
   gap: 50px;
   @media (max-width: 800px) {
     flex-wrap: wrap;
-
+    justify-content: center;
   }
   .headConteainer{
   .h1 {
@@ -43,6 +43,7 @@
   }
 
   .button {
+
     cursor: pointer;
     position: relative;
     background-color: $activeColor;
@@ -115,6 +116,12 @@
   .animation {
     //@include flex(row, center, center, wrap);
     flex: 0 0 50%;
+    img{
+      width: 100%;
+      max-height: 600px;
+      height: auto;
+      object-fit: contain;
+    }
     @media (max-width: 800px) {
       width: 100%;
       margin-top: 0;
