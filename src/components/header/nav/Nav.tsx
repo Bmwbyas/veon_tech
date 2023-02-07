@@ -5,7 +5,7 @@ import {routes} from "../../../features/routes/routes";
 
 import {aboutUsData, servicesData} from "./data";
 import Accordion from "./accordion/Accordion";
-import ButtonClick from "./buttunClick/ButtonClick";
+import ButtonClick from "../../../common/components/buttunClick/ButtonClick";
 
 export const Nav = () => {
     return (
@@ -35,7 +35,7 @@ export const Nav = () => {
             <NavLink className={s.navItem} to={routes.contacts}>
                 <span className={s.navItemTitle}>контакты</span>
             </NavLink>
-            <ButtonClick/>
+            <ButtonClick name={'Заказать звонок'}/>
 
         </div>
 

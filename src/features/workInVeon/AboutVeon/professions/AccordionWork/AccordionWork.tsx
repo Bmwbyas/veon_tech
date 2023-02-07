@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import s from './AccordionWork.module.scss'
 import {proffessionsDataType} from "../data";
+import {Button} from "../../../../../common/components/Button/Button";
 
 type AccordionWorkType = {
     data: proffessionsDataType
@@ -13,7 +14,7 @@ export const AccordionWork: React.FC<AccordionWorkType> = ({data}) => {
     return (
         <div className={s.container}>
             <div className={s.title} onClick={showVacancy}>
-                {view?<span className={s.up}>^</span>:<span className={s.down}>down</span>}
+                {view?<span className={s.up}>^</span>:<span className={s.down}></span>}
                 {data.title}
             </div>
             {view &&
@@ -34,7 +35,7 @@ export const AccordionWork: React.FC<AccordionWorkType> = ({data}) => {
                         Требования:
                     </h2>
                     <ul>
-                         {data.requirements.map(r=><li>{r}</li>)}
+                         {data.requirements.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
 
                     <h2 className={s.header}>
@@ -55,6 +56,7 @@ export const AccordionWork: React.FC<AccordionWorkType> = ({data}) => {
                     <ul>
                         {data.terms.map((r,index)=><li key={index}>{r}</li>)}
                     </ul>
+                    <Button  name={'Откликнуться'}/>
                 </div>}
 
         </div>

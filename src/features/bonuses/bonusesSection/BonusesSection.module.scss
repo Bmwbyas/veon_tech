@@ -9,15 +9,22 @@
 padding: 150px 0 100px 0;
   .wrapper {
     @include container();
-    width: 90%;
+
     @include flex(row, start, center, wrap);
     gap: 50px;
 
+
     .bonusesItemContainer {
-      width: 100%;
-      max-width: 458px;
+     flex:0 0 30%;
+      @media (max-width: 1250px) {
+        flex:0 0 45%;
+      }
+      @media (max-width: 800px) {
+        flex:0 0 100%;
+      }
+      margin-bottom: 20px;
       min-height: 501px;
-      @include flex(column, center, start, wrap);
+      @include flex(column, center, center, wrap);
       position: relative;
       background: rgba(255, 255, 255, 0.8);
       box-shadow: 2px 4px 31px rgba(0, 0, 0, 0.25);
@@ -73,7 +80,7 @@ padding: 150px 0 100px 0;
       }
       .headerItem{
         @include text(32px,700);
-        margin-top: 150px;
+
       }
       .secondHeaderItem{
         @include text(20px,700);
@@ -93,6 +100,7 @@ padding: 150px 0 100px 0;
       .buttonCont{
         position: absolute;
         bottom: 0;
+
       }
 
 

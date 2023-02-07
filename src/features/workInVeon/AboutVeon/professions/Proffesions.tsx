@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Professions.module.scss'
 import {proffessionsData} from "./data";
 import {AccordionWork} from "./AccordionWork/AccordionWork";
-import {Button} from "../../../../common/components/Button/Button";
 
 export const Proffesions = () => {
     return (<>
@@ -10,7 +9,7 @@ export const Proffesions = () => {
             {proffessionsData.map((data,index)=><AccordionWork key={index} data={data}/>)}
 
         </div>
-    <Button  name={'Откликнуться'}/>
+
         </>
     );
 };

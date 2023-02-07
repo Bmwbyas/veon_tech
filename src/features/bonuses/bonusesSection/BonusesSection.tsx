@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './BonusesSection.module.scss'
 import {bonusesData} from "./data";
-import {Button} from "../../../common/components/Button/Button";
+import ButtonClick from "../../../common/components/buttunClick/ButtonClick";
 
 export const BonusesSection = () => {
     return (
@@ -17,7 +17,9 @@ export const BonusesSection = () => {
                     <div className={s.secondHeaderItem}>{b.secondHeader}</div>
                     <div className={s.text}>{b.text}</div>
                     <div className={s.desc}>{b.desc}</div>
-                    <div className={s.buttonCont}><Button name={'Выбрать'}/></div>
+                    <div className={s.buttonCont}>
+                        <ButtonClick name={'Выбрать'}/>
+                    </div>
                 </div>)}
             </div>
         </div>
