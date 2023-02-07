@@ -23,10 +23,10 @@
 
       .name {
         text-align: center;
-        padding: 20px;
+        padding: 15px;
         width: 100%;
         border-radius: 43px 43px 0 0;
-        @include text(24px, 800);
+        @include text(20px, 800);
         color: white;
         background-color: $activeColor;
       }
@@ -35,12 +35,12 @@
         @include flex(row, center, center, wrap);
         margin:0 20px;
         box-sizing: border-box;
-        padding: 40px 0;
+        padding: 20px 0;
 
         .input {
           margin: 20px;
           padding: 20px;
-          width: 242px;
+          width: 200px;
           border-radius: 7px;
           font-size: 18px;
         }
@@ -64,7 +64,7 @@
         .button {
           cursor: pointer;
           width: 100%;
-          @include text(18px, 800);
+          @include text(16px, 600);
           letter-spacing: 1px ;
           margin: 0;
           padding: 10px;
