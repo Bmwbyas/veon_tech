@@ -8,7 +8,7 @@ export const DescriptionAboutUs = () => {
             <div className={s.dataContainer}>
                 <h1 className={s.headDecs}>Почему нам доверяют?</h1>
                 {descData.map((data, index) => <div key={index}>
-                    <div className={s.header}><span className={s.span}>{data.header}</span></div>
+                    <div className={s.header}><div className={s.span}>{index+1}</div>{data.header}</div>
                     <div className={s.text}>{data.desc}</div>
                 </div>)}
 

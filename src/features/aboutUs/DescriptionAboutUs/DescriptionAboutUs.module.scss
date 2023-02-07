@@ -5,55 +5,63 @@
   display: grid;
   grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
   justify-content: center;
-  margin: 40px 0 80px 0 ;
-  gap:30px;
+  margin: 40px 0 80px 0;
+  gap: 30px;
   @media (max-width: 900px) {
     grid-template-columns: minmax(300px, 1fr);
   }
+
   .dataContainer {
     @include flex(column, start, start, wrap);
     padding: 20px;
-    .headDecs{
+
+    .headDecs {
       margin-top: 10px;
     }
+
     .header {
       margin-bottom: 20px;
-      @include text(24px, 800);
-      color: #000;
+      @include text(16px, 400);
+      color: #696969;
+      position: relative;
 
-      .span{
+      .span {
+        font-size: 18px;
+        position: absolute;
+        color: white;
+        background-color: $activeColor;
+        left: -31px;
+        top: -3px;
+        text-align: center;
+        padding: 0px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
 
-        position: relative;
-        &:before {
-          position: absolute;
-          left: -6px;
-          top: 0px;
-          content: '';
-          width: 4px;
-          height: 100%;
-          background-color: $activeColor;
-        }
-      }
-    }
-
-    .text {
-      margin-top: 20px;
-      margin-bottom: 20px;
     }
   }
 
-  .cotainerDecs {
-    @include flex(column, center, start, wrap);
+  .text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 
-    background: #EDEDED;
-    border-radius: 17px;
-    padding: 20px;
-    padding-top: 40px;
-    .headerDesc {
-      text-align: center;
-      @include text(40px, 900);
-      .span{
+.cotainerDecs {
+  @include flex(column, center, start, wrap);
+
+  background: #EDEDED;
+  border-radius: 17px;
+  padding: 20px;
+  padding-top: 40px;
+
+  .headerDesc {
+    text-align: center;
+    @include text(40px, 900);
+
+    .span {
       position: relative;
+
       &:before {
         position: absolute;
         left: -6px;
@@ -63,45 +71,52 @@
         height: 35px;
         background-color: $activeColor;
       }
-      }
     }
-    .featuresCont{
-      @include flex(column, center, start, wrap);
-      .feat{
-        padding: 20px;
-        display: grid;
-        grid-template-columns: minmax(62px,70px) minmax(300px,1fr);
-        align-items: center;
+  }
 
+  .featuresCont {
+    @include flex(column, center, start, wrap);
+
+    .feat {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: minmax(62px, 70px) minmax(300px, 1fr);
+      align-items: center;
+
+      @media (max-width: 1200px) {
+        grid-template-columns:1fr;
+        justify-content: center;
+      }
+
+      .img {
+        min-height: 62px;
+        min-width: 62px;
+        max-width: 70px;
+        max-height: 70px;
+        width: 100%;
+        background-repeat: no-repeat;
         @media (max-width: 1200px) {
-          grid-template-columns:1fr;
-          justify-content: center;
+          max-width: 100%;
         }
-        .img{
-          min-height: 62px;
-          min-width: 62px;
-          max-width: 70px;
-          max-height: 70px;
-          width: 100%;
-          background-repeat: no-repeat;
-          @media (max-width: 1200px) {
-            max-width: 100%;
-          }
 
+      }
+
+      .featContent {
+        margin-left: 20px;
+        width: 85%;
+
+        .head {
+          @include text(24px, 800);
+          margin-bottom: 20px;
+          margin-top: 10px;
         }
-        .featContent{
-          margin-left: 20px;
-          width: 85%;
-          .head{
-            @include text(24px, 800);
-            margin-bottom: 20px;
-            margin-top: 10px;
-          }
-          .featDesc{
 
-          }
+        .featDesc {
+
         }
       }
     }
   }
+}
+
 }
