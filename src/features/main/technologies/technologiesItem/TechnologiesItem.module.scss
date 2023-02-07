@@ -1,11 +1,12 @@
 @import "../../../../common/style/sass/variables";
 @import "../../../../common/style/sass/mixins";
 .container {
-  @include flex(column, center, space-around, wrap);
+  @include flex(column, center, center, wrap);
   width: 100%;
   min-width: 100px;
-  max-width: 200px;
-  min-height: 100px;
+  max-width: 150px;
+  min-height: 70px;
+  height: 100%;
   padding: 30px;
   margin: 15px;
   border-radius: 17px;
@@ -13,7 +14,7 @@ gap:30px;
   background-color:#f7f7f7 ;
   .img{
     min-width: 100px;
-    max-width: 200px;
-    min-height: 100px;
+    max-width: 150px;
+    min-height: 70px;
   }
 }

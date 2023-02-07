@@ -6,9 +6,10 @@
   padding: 80px 0;
 
   .container {
+    @include maxWidth();
     .header{
       margin:0 0 50px 0;
-      @include text(48px,800);
+      @include text(36px,800);
       text-align: center;
     }
     .hr {
@@ -20,14 +21,14 @@
 
     .clients {
       @include flex(row, center, center, wrap);
-      padding: 80px 0;
+      padding: 50px 0;
 
       .imgContainer {
         min-width: 100px;
         width: 300px;
         max-width: 300px;
         background-repeat: no-repeat;
-        height: 100px;
+        height: 70px;
         margin: 0 100px;
       }
     }

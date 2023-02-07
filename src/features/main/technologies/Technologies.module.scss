@@ -5,7 +5,7 @@
   @include container();
 
   .header {
-    @include text(48px, 700);
+    @include text(36px, 700);
     text-align: center;
   }
 
@@ -15,7 +15,7 @@
     .nameTech {
       position: relative;
       padding: 37px;
-      @include text(20px, 700);
+      @include text($fontSize, 700);
       padding-bottom: 10px;
       border: none;
       background: transparent;
@@ -38,7 +38,7 @@
 
   .descContainer{
     @include flex(row, center, center, wrap);
-    padding: 80px 0;
+    padding: 50px 0;
     width: 100%;
   }
 }

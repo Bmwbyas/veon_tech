@@ -9,13 +9,13 @@
 
 
   .wrapper {
-    @include flex(row, start, start, wrap);
-    width: 80%;
-    margin: 0 auto;
+    @include flex(row, start, space-between, wrap);
+    @include container();
+
     padding-top: 70px;
 
     .desc {
-      width: 30%;
+      width: 35%;
 
       padding: 20px 40px 20px 20px;
       @media (max-width: 1200px) {
@@ -23,7 +23,7 @@
         padding: 20px;
       }
       .head {
-        @include text(36px, 800);
+        @include text($headerFontsize, 800);
         margin: 0;
 
         .span {
@@ -37,17 +37,15 @@
       }
     }
     .dev{
-      width: 70%;
+      width: 65%;
       @media (max-width: 1200px) {
         width: 100%;
         justify-content: center;
       }
-        padding: 20px 0 ;
+        padding: 10px 0 ;
       gap:30px;
       display: grid;
       grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) ;
-
-
       @media (max-width: 770px) {
         grid-template-columns: minmax(100px, 1fr);
 

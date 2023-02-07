@@ -7,6 +7,8 @@ type TechType='frontend'|'developmentSoftware'|'dataBase'|'CMS'
 export const Technologies = () => {
 const [tech,setTech]=React.useState<TechType>('frontend')
 const [active,setActive]=React.useState('frontend')
+    const data=techData[tech]
+
     const activeClass=s.nameTech+' '+s.active
     const activeCorrectFilter = (event:MouseEvent<HTMLButtonElement>) => {
 
@@ -24,7 +26,7 @@ const [active,setActive]=React.useState('frontend')
                 <button id={'CMS'} className={active==='CMS'?activeClass:s.nameTech } onClick={activeCorrectFilter}>CMS</button>
             </div>
             <div className={s.descContainer}>
-                {techData[tech].map((t,index)=><TechnologiesItem tech={t} key={index} />)}
+                {data.map((t,index)=><TechnologiesItem tech={t} key={index} />)}
             </div>
         </div>
     );

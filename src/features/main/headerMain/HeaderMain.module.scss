@@ -2,58 +2,63 @@
 @import "../../../common/style/sass/mixins";
 
 .container {
-  max-width: 1920px ;
-  @include flex(row, center, start, nowrap);
+  @include maxWidth();
+  @include flex(row, center, center, nowrap);
   @include container();
-  min-height: 30vh;
+  min-height: 25vh;
   background-color: white;
   padding-top: 100px;
   gap: 50px;
-  @media (max-width: 1200px) {
+  @media (max-width: 800px) {
     flex-wrap: wrap;
 
   }
+  .headConteainer{
   .h1 {
-    width: 50%;
-    @media (max-width: 1200px) {
+    flex: 0 0 50%;
+    @media (max-width: 800px) {
       width: 100%;
+      text-align: center;
+      margin-bottom: 0;
     }
-    margin-top: 30px;
-    margin-bottom: 100px;
+    //margin-top: 30px;
+
     //margin-left: 80px;
 
-    @include text(50px, 900);
-    @media (max-width: 792px) {
+    @include text(36px, 900);
+    @media (max-width: 800px) {
       margin-left: 0;
       align-items: center;
-      font-size: 36px;
+      font-size: 30px;
     }
 
-    .text {
+
+    }
+  .text {
+    color: $activeColor;
+  }
+
+  .paragrah {
+    @include text($fontSize, 400)
+  }
+
+  .button {
+    cursor: pointer;
+    position: relative;
+    background-color: $activeColor;
+    border-radius: 8px;
+    border: 1px solid $activeColor;
+    width: 278px;
+    padding: 12px 19px;
+    color: #ffffff;
+    @include text($fontSize, 700);
+    transition: all 0.5s;
+    &:hover,
+    &:active {
+      background-color: white;
       color: $activeColor;
     }
-
-    .paragrah {
-      @include text(20px, 400)
-    }
-
-    .button {
-      cursor: pointer;
-      position: relative;
-      background-color: $activeColor;
-      border-radius: 8px;
-      border: 1px solid $activeColor;
-      width: 278px;
-      padding: 12px 19px;
-      color: #ffffff;
-      @include text(16px, 700);
-      transition: all 0.5s;
-      &:hover,
-      &:active {
-        background-color: white;
-        color: $activeColor;
-      }
-    }
+  }
 
     .containerModal {
       transform: translate(0, 0);
@@ -108,18 +113,14 @@
   }
 
   .animation {
-    @include flex(row, center, center, wrap);
-    width: 50%;
-    height:100%;
-    @media (max-width: 1200px) {
+    //@include flex(row, center, center, wrap);
+    flex: 0 0 50%;
+    @media (max-width: 800px) {
       width: 100%;
-
-      img{
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-
-      }
+      margin-top: 0;
+      background-size: cover;
     }
+   height: 100%;
+    min-height: 400px;
   }
 }

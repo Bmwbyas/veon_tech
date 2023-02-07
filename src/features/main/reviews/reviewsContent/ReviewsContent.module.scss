@@ -6,15 +6,15 @@
   @include container();
   margin-top: 100px;
   .rev{
-    @include text(28px,800)
+    @include text(20px,800)
   }
   .desc{
-    @include text(24px,600)
+    @include text($fontSize,600)
   }
 
 }
 .descRadio{
-  @include text(24px,600)
+  @include text($fontSize,600)
 }
 .changeReview{
   @include flex(row, center,center, wrap);

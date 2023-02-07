@@ -8,14 +8,18 @@ type CaseType = {
 }
 export const Case: React.FC<CaseType> = ({data, index}) => {
     const {img, desc, title} = data
-    const viev = typeof (img) === 'string'
+    // const viev = typeof (img) === 'string'
     return (< >
             <div className={s.container} key={index}>
-                {viev ?
-                     <div className={s.imgContainer}><img className={s.img} src={img} sizes="(max-width: 1800px) 500px"
-                                                         alt="d"/></div>:
-                    <div className={s.imgContainer} style={img}></div>
-                }
+               <div className={s.imgWrap}>
+                   <div className={s.imgContainer}><img className={s.img} src={img} alt="d"/></div>
+                {/*   {viev */}
+                {/*   ? <div className={s.imgContainer}>*/}
+                {/*         <img className={s.img} src={img} alt="d"/>*/}
+                {/*     </div>*/}
+                {/*   : <div className={s.imgContainer} style={img}></div>*/}
+                {/*}*/}
+               </div>
                 <div className={s.title}>{title}</div>
                 <div className={s.desc}>{desc}</div>
             </div>

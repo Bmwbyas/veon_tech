@@ -5,11 +5,13 @@
   @include flex(row, center, center, wrap);
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:center ;
+  background-size: cover;
   background-image: url("../../../assets/img/imgMain/contact/bg-image.png");
 
   .wrapper {
     //@include flex(row, center, center, wrap);
+    @include maxWidth();
 
 
     .form {
@@ -24,7 +26,7 @@
         padding: 20px;
         width: 100%;
         border-radius: 43px 43px 0 0;
-        @include text(34px, 800);
+        @include text(24px, 800);
         color: white;
         background-color: $activeColor;
       }
@@ -40,6 +42,7 @@
           padding: 20px;
           width: 242px;
           border-radius: 7px;
+          font-size: 18px;
         }
       }
 
@@ -47,6 +50,8 @@
         width: 90%;
 
         .textarea {
+          font-size: 18px;
+          padding: 20px;
           width: 100%;
           min-height: 174px;
           border-radius: 7px;
@@ -59,7 +64,8 @@
         .button {
           cursor: pointer;
           width: 100%;
-          @include text(24px, 800);
+          @include text(18px, 800);
+          letter-spacing: 1px ;
           margin: 0;
           padding: 10px;
           color: white;
