@@ -14,7 +14,7 @@
   text-transform: uppercase;
   margin-left: 30px;
   @media (max-width: 1540px) {
-    font-size: 14px;
+    font-size: $fontSize;
     margin-left: 0.5rem;
 
   }
