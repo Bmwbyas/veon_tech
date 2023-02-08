@@ -12,7 +12,7 @@ export const CurrentDev:React.FC<CurrentDevType> = ({D}) => {
             <div className={s.img} style={D.img}></div>
             <h2>{D.header}</h2>
             <p>{D.desc}</p>
-            <Button name={'Подробнее'}/>
+            <div style={{marginBottom:40}}><Button name={'Подробнее'}/></div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ export const MainMistakes = () => {
     return (
         <div className={s.container}>
             <div className={s.wrap}>
-                <h2>4 основные ошибки при разработке сайта</h2>
+                <h2 className={s.h2}>4 основные ошибки при разработке сайта</h2>
                 <div className={s.containerMistakes}>
                     <div className={s.namesTechnologies}>
                         <button id={'01'} className={active==='01'?activeClass:s.nameTech } onClick={activeCorrectFilter}><strong>01</strong> Отсутсвие чёткого призыва к действию</button>

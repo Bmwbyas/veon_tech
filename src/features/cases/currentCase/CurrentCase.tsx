@@ -9,6 +9,7 @@ import {Title} from "../../../common/components/title/Title";
 import {GetInTorchCase} from "./getInTorch/GetInTorchCase";
 import {NavLink} from "react-router-dom";
 import {routes} from "../../routes/routes";
+import ButtonClick from "../../../common/components/buttunClick/ButtonClick";
 
 
 export const CurrentCase = () => {
@@ -63,7 +64,7 @@ export const CurrentCase = () => {
 
                 </section>
             </div>
-            <GetInTorchCase text={'ХОТИТЕ'} firstSpan={'ТАК ЖЕ?'} middleText={'МЫ ПОМОЖЕМ'} />
+            <GetInTorchCase text={'ХОТИТЕ'} firstSpan={'ТАК ЖЕ?'} middleText={'МЫ ПОМОЖЕМ'}/>
             <div className={s.casesContainer}>
 
                 <section>
@@ -73,12 +74,12 @@ export const CurrentCase = () => {
                         {caseSimilar.map((c: any) => {
 
                             const lastItem = c.id === 4
-                            return <NavLink to={routes.cases} key={c.id} className={s.simularCase} style={c.img}>
-                                {lastItem && <div className={s.lastSimular}>
-                                    Здесь может быть ваш проект
-                                </div>}
+                            return <>
+                                {lastItem
+                                    ? <div ><ButtonClick name={'Здесь может быть ваш проект'}/></div>
 
-                            </NavLink>
+                                    : <NavLink to={routes.cases} className={s.simularCase} style={c.img}> </NavLink>}
+                            </>
                         })}
 
                     </div>

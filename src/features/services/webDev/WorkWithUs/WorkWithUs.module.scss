@@ -2,6 +2,18 @@
 @import "../../../../common/style/sass/mixins";
 
 .container {
-  background-color: #e9fce5;
 
+  background-color: #e9fce5;
+  padding: 30px 0 50px 0;
+.h2{
+  @include container();
+  @include text(28px,800);
+  text-align: center;
+  margin-bottom: 30px;
+}
+  .dev{
+    @include container();
+    @include flex(row,start,center,wrap);
+    gap:30px;
+  }
 }

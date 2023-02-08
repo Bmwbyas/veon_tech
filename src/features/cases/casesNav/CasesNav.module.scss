@@ -17,6 +17,9 @@
       height: 1px;
       width: 22px;
       background-color: #9a9a9a;
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
     &:last-child {
       &:before{
@@ -31,7 +34,7 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #9a9a9a;
-      @include text(16px, 600);
+      @include text($fontSize, 600);
       transition: 0.5s;
       &:hover{
         color:$activeColor;

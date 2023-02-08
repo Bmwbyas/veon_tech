@@ -1,0 +1,19 @@
+@import "../../../../../common/style/sass/variables";
+@import "../../../../../common/style/sass/mixins";
+
+.container {
+  flex: 0 0 30%;
+  min-height: 300px;
+  padding: 20px 20px 0 20px;
+  margin-top: 20px;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFFDFD;
+  //background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  .img {
+    width: 44px;
+    height: 44px;
+  }
+}

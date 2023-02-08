@@ -8,8 +8,11 @@
     @include maxWidth();
     @include container();
     @include flex(column, center, center, wrap);
-    padding: 100px 0;
-
+    padding: 60px 0;
+    .h2{
+      @include text(28px,800);
+      margin-bottom: 30px;
+    }
     .containerMistakes {
 
       @include flex(row, start, center, wrap);

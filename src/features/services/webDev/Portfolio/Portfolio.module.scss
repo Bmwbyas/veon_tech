@@ -1,0 +1,37 @@
+@import "../../../../common/style/sass/variables";
+@import "../../../../common/style/sass/mixins";
+
+
+.container {
+padding: 50px 0;
+  background-color: #e9fce5;
+  //@include flex(row,center,center,wrap);
+.h2{
+  @include text(28px,800);
+  padding: 40px 0;
+  text-align: center;
+}
+  .itemWrap{
+
+  .itemContainer{
+    @include flex(column,center,center,nowrap);
+
+    margin: 20px;
+
+border-radius: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFFDFD;
+    //background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    .img{
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+    }
+    .text {
+      width: 100%;
+      padding-left: 40px;
+    }
+  }
+}
+}

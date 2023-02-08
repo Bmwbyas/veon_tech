@@ -3,8 +3,8 @@
 @import "../../../../common/components/title/Title.module";
 
 .work {
-  width: 458px;
-  height: 501px;
+  flex: 0 0 25%;
+  height: 400px;
   border-radius: 17px;
   position: relative;
   opacity: 1;
@@ -17,30 +17,33 @@
     height: 100%;
     opacity: 0;
     color: $secondTextColor;
-    @include flex(column, start, center, wrap);
+    @include flex(column, center, center, wrap);
 
     &:hover {
       opacity: 1;
       transition: 0.5s;
       .workTitle {
         position: relative;
+        font-size: 16px;
         font-weight: 800;
         z-index: 1;
         padding: 20px;
-        padding-left: 100px;
+        text-align: center;
         transition: all 0.5s;
       }
 
       .workDesc {
         position: relative;
+        font-size: $fontSize;
         padding: 20px;
-        padding-left: 100px;
+        text-align: center;
         z-index: 1;
         margin-bottom: 30px;
-        transition: all 0.5s ;
+
       }
 
       .buttonWork {
+        transition: all 0.5s;
         color: white;
         position: relative;
         background-color: transparent;

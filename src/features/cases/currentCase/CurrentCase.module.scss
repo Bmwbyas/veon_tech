@@ -6,11 +6,11 @@
 .casesContainer {
   @include maxWidth();
   @include container();
-  width: 90%;
   margin-bottom: 50px;
 
   .title {
-    @include textTitle()
+    @include text(36px,800);
+    margin-bottom: 60px;
   }
 
   .casesInfoContainer {
@@ -54,10 +54,10 @@
     .titleTask {
       text-align: center;
       text-transform: uppercase;
-      padding: 15px 0;
+      padding: 10px 0;
       background-color: $activeColor;
       border-radius: 6px 6px 0 0;
-      @include text(24px, 800);
+      @include text(20px, 800);
       color: $secondTextColor;
 
     }
@@ -125,38 +125,14 @@
       border-radius: 27px;
       border: 2px solid $activeColor;
 
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       cursor: pointer;
       transition: 0.3s;
       &:hover{
         transform: scale(1.05);
       }
-      .lastSimular {
-        background-color: $activeColor;
-        border-radius: 25px ;
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        color: white;
 
-        &:before {
-          content: '';
-          position: absolute;
-          top: 50px;
-          left: 125px;
-          width: 50px;
-          height: 50px;
-          background-image: url("../../../assets/img/add.png");
-          background-size: contain;
-          background-position: center;
-        }
-      }
     }
   }
 }

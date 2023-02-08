@@ -21,6 +21,9 @@ const ButtonClick:React.FC<ButtonClickType> = ({name}) => {
         <>
             {name==='Заказать звонок'&& <button onClick={openModal} className={ s.button}>{name}</button>}
             {name==='Выбрать'&& <Button name={name} onClick={openModal}/>}
+            {name==='Здесь может быть ваш проект'&&<div  className={s.lastSimular} onClick={openModal}>
+                Здесь может быть ваш проект
+            </div>}
             <Modal view={view} closeModal={closeModal}/>
         </>
     );
