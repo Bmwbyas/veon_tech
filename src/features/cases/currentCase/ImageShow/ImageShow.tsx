@@ -10,7 +10,7 @@ type ImageShowType={
 }
 export const ImageShow:React.FC<ImageShowType> = ({t}) => {
     const [view,setView]=useState(false)
-  
+
     return (
         <>
             <div className={s.work} style={t.img}>
