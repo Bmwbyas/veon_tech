@@ -6,10 +6,23 @@
   flex: 0 0 30%;
   max-width: 30%;
   cursor: pointer;
+  @media (max-width: 1100px) {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  @media (max-width: 800px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   &:last-child{
     flex: 0 0 60%;
     max-width: 60%;
+    @media (max-width: 1100px) {
+      flex: 0 0 100%;
+      max-width: 100%;
   }
+  }
+
   .imgWrap {
     display: inline-block;
     overflow: hidden;

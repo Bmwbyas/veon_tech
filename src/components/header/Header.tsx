@@ -1,4 +1,4 @@
-import React, {LegacyRef, useState} from 'react';
+import React, {LegacyRef, MouseEventHandler, useState} from 'react';
 import s from './Header.module.scss'
 import {Nav} from "./nav/Nav";
 import logo from './../../assets/img/logo.png'
@@ -28,7 +28,7 @@ export const Header = () => {
     const thirdLine = `${s.burgerLine} ${s.burgerLineThird} ${showMenu && `${s.burgerLineThirdActive}`}`
     const forthLine = `${s.burgerLine} ${s.burgerLineFourth} ${showMenu && `${s.burgerLineFourthActive}`}`
     const backgroundActive = `${s.background} ${showMenu && `${s.background} ${s.backgroundActive}`}`
-    const showMenuHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const showMenuHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>|React.MouseEvent<HTMLAnchorElement, MouseEvent> ) => {
         if (!e.target) {
             setShowMenu(!showMenu)
         }
@@ -46,7 +46,7 @@ const showNav=showMenu?s.navContainer:s.navContainer+ ' ' +s.navActive
                 </div>
 
                 <div className={s.burgerContainer}>
-                    <div className={s.burger} ref={root} onClick={showMenuHandler}>
+                    <div className={s.burger}  onClick={showMenuHandler}>
                         <span className={firstLine}></span>
                         <span className={secondLine}></span>
                         <span className={thirdLine}></span>
@@ -54,7 +54,7 @@ const showNav=showMenu?s.navContainer:s.navContainer+ ' ' +s.navActive
                         <span className={backgroundActive}></span>
                     </div>
                     <div className={showNav}>
-                        <Nav/>
+                        <Nav showMenuHandler={showMenuHandler}/>
                     </div>
                 </div>
             </div>

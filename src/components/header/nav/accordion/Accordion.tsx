@@ -8,8 +8,9 @@ type AccordionType = {
     data: DataType[]
     mainRoute: string
     title: string
+    showMenuHandler?:(e: React.MouseEvent<HTMLDivElement, MouseEvent>|React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void
 }
-const Accordion: React.FC<AccordionType> = ({data, title}) => {
+const Accordion: React.FC<AccordionType> = ({data, title,showMenuHandler}) => {
     const [view, setView] = React.useState(false)
     const openViewHandler = () => {
         setView(true)
@@ -21,9 +22,9 @@ const Accordion: React.FC<AccordionType> = ({data, title}) => {
 
     return (
         <>
-            <div className={st.item} onMouseOut={closeViewHandler}  onMouseOver={openViewHandler}>
+            <div className={st.item} onClick={openViewHandler} onMouseOut={closeViewHandler}  onMouseOver={openViewHandler}>
                 <span className={s.navItemTitle}>{title}</span>
-                {view && <AccordionItem toggleViewHandler={closeViewHandler} data={data}/>}
+                {view && <AccordionItem showMenuHandler={showMenuHandler} toggleViewHandler={closeViewHandler} data={data}/>}
             </div>
 
         </>

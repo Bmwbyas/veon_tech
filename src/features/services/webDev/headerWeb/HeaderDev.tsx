@@ -1,10 +1,14 @@
 import React from 'react';
 import s from './HeaderDev.module.scss'
 
-import logo from "../../../../assets/img/imgMain/logo.png";
-import {FormComponent} from "../../../../common/components/getInTorch/modal/form/Form";
 
-export const HeaderDev = () => {
+import {FormComponent} from "../../../../common/components/getInTorch/modal/form/Form";
+type HeaderDevType={
+    header:string
+    text:string
+    img:string
+}
+export const HeaderDev:React.FC<HeaderDevType> = ({header,text,img}) => {
 
     const [view, setView] = React.useState(false)
     const openModal = () => {
@@ -17,7 +21,9 @@ export const HeaderDev = () => {
     return (
         <div className={s.container}>
 
-            <div className={s.h1}>Мы создаем уникальный сайт, который превращает посетителей в клиентов.<br/>
+            <div className={s.descContainer}>
+                <div className={s.h1}>{header}</div>
+                <div className={s.paragrah}>{text}</div>
 
                 <button className={s.button} onClick={openModal}>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
 
@@ -27,7 +33,7 @@ export const HeaderDev = () => {
 
             </div>
             <div className={s.animation} >
-             <img src={logo} alt={'logo'}/>
+             <img src={img} alt={'logo'}/>
             </div>
 
         </div>

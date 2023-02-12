@@ -39,6 +39,9 @@ z-index: 234567890;
     min-width: 340px;
     min-height: 340px;
     background: white;
+   @media (max-width: 800px) {
+     width: 100%;
+   }
 
 
   }

@@ -24,6 +24,9 @@
 
     .cases {
       @include flex(row, start, start, wrap);
+      @media (max-width: 1100px) {
+        @include flex(row, center, center, wrap);
+      }
       gap: 30px;
       //display: grid;
       //grid-template-columns: minmax(200px ,512px) minmax(200px ,512px) minmax(200px ,512px);

@@ -30,8 +30,8 @@
       font-size: 30px;
       text-align: center;
       margin: 0;
-      margin-bottom: 30px;
-      padding: 20px;
+      //margin-bottom: 30px;
+      padding: 30px;
       color: white;
 
 
@@ -40,6 +40,9 @@
         background-color:#FFFFFF;
       }
     ;
+    }
+    @media (max-height: 667px) {
+      padding: 15px;
     }
 
     .navItemTitle {

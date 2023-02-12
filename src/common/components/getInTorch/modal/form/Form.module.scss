@@ -16,6 +16,7 @@
   transform: translate(-50%,0);
 }
   .closeModal{
+    color: black;
     cursor: pointer;
     font-size: 30px;
     position: absolute;
@@ -28,7 +29,8 @@
   }
 
   .textareaWrapper {
-    @include text(14px, 400)
+    @include text(14px, 400);
+    color:black;
   }
 
   .input {
