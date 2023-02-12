@@ -20,7 +20,10 @@
       .contentContainer {
         @include flex(column, start, space-between, wrap);
         gap: 30px;
-        width: 60%;
+        width: 50%;
+        @media (max-width: 850px) {
+          width: 100%;
+        }
         .itemContainer {
 
           border-radius: 15px;
@@ -38,9 +41,13 @@ padding: 10px 0;
         }
       }
       .imgContainer{
-        width: 40%;
-        display: flex;
-        justify-content: center;
+        width: 50%;
+        @media (max-width: 850px) {
+        width: 100%;
+          margin-top: 30px;
+      }
+
+        @include flex(column, center, start, wrap);
       }
     }
 

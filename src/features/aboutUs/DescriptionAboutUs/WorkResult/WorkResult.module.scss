@@ -1,0 +1,66 @@
+@import "src/common/style/sass/variables";
+@import "src/common/style/sass/mixins";
+
+
+.headerDesc {
+  text-align: center;
+  @include text(30px, 900);
+
+  .span {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      content: '';
+      width: 4px;
+      height: 30px;
+      background-color: $activeColor;
+    }
+  }
+}
+
+.featuresCont {
+  @include flex(column, center, start, wrap);
+
+  .feat {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: minmax(62px, 70px) minmax(300px, 1fr);
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      grid-template-columns:1fr;
+      justify-content: center;
+    }
+
+    .img {
+      min-height: 62px;
+      min-width: 62px;
+      max-width: 70px;
+      max-height: 70px;
+      width: 100%;
+      background-repeat: no-repeat;
+      @media (max-width: 1200px) {
+        max-width: 100%;
+      }
+
+    }
+
+    .featContent {
+      margin-left: 20px;
+      width: 85%;
+
+      .head {
+        @include text(24px, 800);
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      .featDesc {
+
+      }
+    }
+  }
+}

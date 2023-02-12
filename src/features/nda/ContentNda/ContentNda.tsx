@@ -2,6 +2,7 @@ import React from 'react';
 import s from './ContentNda.module.scss'
 import {ndaData} from "./data";
 import def from "../../../assets/img/imgNDA/defence.png";
+import {WorkResult} from "../../aboutUs/DescriptionAboutUs/WorkResult/WorkResult";
 
 export const ContentNda = () => {
 
@@ -17,7 +18,7 @@ export const ContentNda = () => {
                         </div>)}
                     </div>
                     <div className={s.imgContainer}>
-                        <img src={def} alt="def"/>
+                        <WorkResult/>
                     </div>
                 </div>
 

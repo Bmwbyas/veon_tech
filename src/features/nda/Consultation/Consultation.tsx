@@ -24,7 +24,7 @@ export const Consultation = () => {
                 </p>
             </div>
             <div className={s.logoContainer}>
-                <div className={s.logo}><img src={logo} alt="logo"/></div>
+                <div className={s.logo}><img className={s.img} src={logo} alt="logo"/></div>
                 <div><Button name={"Получить консультацию"} onClick={openModal}/></div>
                 <Modal closeModal={closeModal} view={view}/>
             </div>
