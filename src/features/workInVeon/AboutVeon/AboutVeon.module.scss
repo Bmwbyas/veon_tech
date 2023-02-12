@@ -26,6 +26,9 @@
     @media (max-width: 1279px) {
       grid-template-columns: minmax(150px,1fr) minmax(150px,1fr);
     }
+    @media (max-width: 600px) {
+      grid-template-columns: minmax(150px,1fr) ;
+    }
     .descItem{
       @include text(16px,600);
       padding: 0 10px;

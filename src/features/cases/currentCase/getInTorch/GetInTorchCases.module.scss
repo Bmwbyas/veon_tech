@@ -1,36 +1,44 @@
 @import "../../../../common/style/sass/variables";
 @import "../../../../common/style/sass/mixins";
 
-
-.decsContainer {
-  @include flex(column, center, center, wrap);
+.wrap {
   background-color: $bgColor;
 
-  margin: 0;
-  padding: 40px 0;
+  .decsContainer {
+    @include flex(column, center, center, wrap);
+    @include container();
 
-  font-size: 30px;
-  .textDesc {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 30px;
+    .headerText{
+      text-align: center;
+      width: 100%;
+    }
+    .textDesc {
 
-    color: $activeColor;
-  }
+      color: $activeColor;
+    }
 
-  .buttonDesc {
-    cursor: pointer;
-    margin-top: 20px;
-    background-color: $activeColor;
-    border-radius: 26px;
-    font-size: 24px;
-    color: #fff;
-    border: 1px solid $activeColor;
-    padding: 15px 30px;
-    font-weight: 400;
-    transition: 0.7s;
-    &:hover,
-    &:active{
+    .buttonDesc {
+      cursor: pointer;
+      margin-top: 20px;
+      background-color: $activeColor;
+      border-radius: 26px;
+      font-size: 24px;
+      color: #fff;
+      border: 1px solid $activeColor;
+      padding: 15px 30px;
+      font-weight: 400;
       transition: 0.7s;
-    background-color: white;
-      color:$activeColor;
-  }
+
+      &:hover,
+      &:active {
+        transition: 0.7s;
+        background-color: white;
+        color: $activeColor;
+      }
+    }
   }
 }

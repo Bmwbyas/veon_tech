@@ -1,10 +1,12 @@
 import React, {MouseEvent, useState} from 'react';
 import s from './Sidebar.module.scss'
+import {NavLink} from "react-router-dom";
+import {routes} from "../../routes/routes";
 
 export const Sidebar = () => {
-    const [nav,setNav]=useState<'1'|'2'|'3'|'4'>('2')
+    const [nav,setNav]=useState<'1'|'2'|'3'|'4'>('3')
 
-    const activeCorrectFilter = (event:MouseEvent<HTMLDivElement>) => {
+    const activeCorrectFilter = (event:MouseEvent<HTMLAnchorElement>) => {
 
 
         setNav(event.currentTarget.id as '1'|'2'|'3'|'4')
@@ -13,10 +15,10 @@ export const Sidebar = () => {
     return (
         <div className={s.container}>
             <div className={s.navBlock}>
-                <div id={'1'} className={nav==='1'?s.navItem+' '+s.activeNav:s.navItem}  onClick={activeCorrectFilter}>О нашей компании</div>
-                <div id={'2'} className={nav==='2'?s.navItem +' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>Работа в Veon-Tech</div>
-                <div id={'3'} className={nav==='3'?s.navItem+' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>Отзывы клиентов</div>
-                <div id={'4'} className={nav==='4'?s.navItem+' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>Популярные вопросы</div>
+                <NavLink to={routes.aboutUs} id={'1'} className={nav==='1'?s.navItem+' '+s.activeNav:s.navItem}  onClick={activeCorrectFilter}>О нашей компании</NavLink>
+                <NavLink to={routes.nda} id={'2'} className={nav==='2'?s.navItem +' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>NDA</NavLink>
+                <NavLink to={routes.workInVeon} id={'3'} className={nav==='3'?s.navItem+' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>Работа в Veon-Tech</NavLink>
+                {/*<div id={'4'} className={nav==='4'?s.navItem+' '+s.activeNav:s.navItem} onClick={activeCorrectFilter}>Популярные вопросы</div>*/}
             </div>
             <div className={s.respond}>
                 <div className={s.respondHeader}>Откликнуться</div>

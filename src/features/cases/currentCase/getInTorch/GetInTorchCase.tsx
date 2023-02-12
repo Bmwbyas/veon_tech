@@ -20,7 +20,7 @@ export const GetInTorchCase:React.FC<GetInTorchCaseType> = ({text,firstSpan,seco
     return (
         <div className={s.wrap}>
         <section className={s.decsContainer}>
-            <div>{text} <span className={s.textDesc}>{firstSpan} </span>{middleText} <span>{secondSpan}</span>{afterText}</div>
+            <div className={s.headerText}>{text} <span className={s.textDesc}>{firstSpan} </span>{middleText} <span>{secondSpan}</span>{afterText}</div>
             <button onClick={openModal}  className={s.buttonDesc}>Заказать звонок</button>
             <Modal view={view} closeModal={closeModal}/>
         </section>

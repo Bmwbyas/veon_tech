@@ -112,9 +112,11 @@
 
 
   .simularHeader {
+    text-align: center;
+    width: 100%;
     @include text(24px, 800);
     margin: 50px 0;
-    margin-left: 130px;
+
   }
 
   .simularCaseContainer {

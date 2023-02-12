@@ -9,7 +9,7 @@ export const Reviews = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.container}>
-                <div className={s.header}>Наши работы</div>
+                <div className={s.header}>Наши клиенты</div>
                 <div className={s.hr}></div>
                 <Marquee speed={150}>
                     <div className={s.clients}>
