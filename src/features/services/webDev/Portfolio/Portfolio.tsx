@@ -9,26 +9,18 @@ import {allCategoryPortfolio} from "./data";
 
 
 const Portfolio: React.FC = () => {
-    const [windowWidth, setWindowWidth] = React.useState(window.screen.width);
 
-    // console.log(windowWidth)
-    React.useEffect(() => {
-        window.onresize = () => {
-            setWindowWidth(window.screen.width)
-        };
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
 
-
-    }, []);
-
-    let countSlideToShow = 1
-    if (windowWidth > 1280) {
-        countSlideToShow = 4
-    }
-    if (windowWidth > 1110) {
-        countSlideToShow = 3
-    }
-    if (windowWidth > 700) {
-        countSlideToShow = 2
+    let countSlideToShow = 3
+    // if (windowWidth <= 1280) {
+    //     countSlideToShow = 3
+    // }
+    // if (windowWidth <= 1110) {
+    //     countSlideToShow = 2
+    // }
+    if (mediaQuery.matches) {
+        countSlideToShow = 1
     }
     // console.log(countSlideToShow)
     const sliderSettings = {
