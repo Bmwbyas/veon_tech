@@ -21,15 +21,15 @@ const Portfolio: React.FC = () => {
     }, []);
 
     let countSlideToShow = 1
-    // if (windowWidth > 1280) {
-    //     countSlideToShow = 4
-    // }
-    // if (windowWidth > 1110) {
-    //     countSlideToShow = 3
-    // }
-    // if (windowWidth > 700) {
-    //     countSlideToShow = 2
-    // }
+    if (windowWidth > 1280) {
+        countSlideToShow = 4
+    }
+    if (windowWidth > 1110) {
+        countSlideToShow = 3
+    }
+    if (windowWidth > 700) {
+        countSlideToShow = 2
+    }
     // console.log(countSlideToShow)
     const sliderSettings = {
 
