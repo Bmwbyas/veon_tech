@@ -2,10 +2,23 @@
 @import "src/common/style/sass/mixins";
 
 .container{
-@include container();
+background-color: #e9fce5;
   //@include flex(column,start,start,wrap);
+  .h1{
+    text-align: center;
+    @include text(30px,800);
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .desc{
+    @include text($fontSize,400);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+
   .sliderContainer{
-
-
+padding-bottom: 50px;
   }
 }
