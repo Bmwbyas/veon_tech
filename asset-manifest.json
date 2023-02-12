@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/veon_tech_by/static/css/main.ad952a3f.css",
-    "main.js": "/veon_tech_by/static/js/main.bddc0a46.js",
+    "main.css": "/veon_tech_by/static/css/main.ef9c27da.css",
+    "main.js": "/veon_tech_by/static/js/main.66c1ed98.js",
     "static/js/787.28cb0dcd.chunk.js": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js",
     "static/media/example3.png": "/veon_tech_by/static/media/example3.8bbbc705aed7f869c30d.png",
     "static/media/example1.png": "/veon_tech_by/static/media/example1.adb8c25cd63b14110903.png",
@@ -55,6 +55,7 @@
     "static/media/a5.png": "/veon_tech_by/static/media/a5.d53c335c4eaf06727b50.png",
     "static/media/portfolio-1.jpg": "/veon_tech_by/static/media/portfolio-1.71b36e4334c7840936cd.jpg",
     "static/media/a1.png": "/veon_tech_by/static/media/a1.b66384c1abc440353b9c.png",
+    "static/media/hr-girl.jpg": "/veon_tech_by/static/media/hr-girl.a928a8a876445dbfc3d5.jpg",
     "static/media/managerImg.jpg": "/veon_tech_by/static/media/managerImg.0151e8d26e03ebb0a2ad.jpg",
     "static/media/logoModal.jpg": "/veon_tech_by/static/media/logoModal.f0a3de5056b199cbfec3.jpg",
     "static/media/a2.png": "/veon_tech_by/static/media/a2.c382b510a1c3241240af.png",
@@ -93,23 +94,23 @@
     "static/media/slick.woff": "/veon_tech_by/static/media/slick.295183786cd8a1389865.woff",
     "static/media/react.svg": "/veon_tech_by/static/media/react.9235e8f8e2b73d394801330aba87511f.svg",
     "static/media/android.svg": "/veon_tech_by/static/media/android.b7edb2d3617e289be2cf3479b83f292d.svg",
+    "index.html": "/veon_tech_by/index.html",
     "static/media/swift.svg": "/veon_tech_by/static/media/swift.facc57fe23eef00f81540c4f65254807.svg",
     "static/media/typescript.svg": "/veon_tech_by/static/media/typescript.51c750049c057cb5f4c535424eb20c4f.svg",
     "static/media/drupal.svg": "/veon_tech_by/static/media/drupal.453c2161f47d741d61a08126c8327bb0.svg",
     "static/media/aws-rds.svg": "/veon_tech_by/static/media/aws-rds.779fcfefa9de3add78665c190217b846.svg",
-    "index.html": "/veon_tech_by/index.html",
     "static/media/angular.svg": "/veon_tech_by/static/media/angular.7ccc9e1b507c21eea32804e04b3296a5.svg",
     "static/media/Arrow 10.svg": "/veon_tech_by/static/media/Arrow 10.a0a7777e67e4148456cd.svg",
     "static/media/Arrow 9.svg": "/veon_tech_by/static/media/Arrow 9.5e417e6076517dc80f54.svg",
     "static/media/magento.svg": "/veon_tech_by/static/media/magento.0937555253fc0d35b8f3fb0d8587b5bb.svg",
     "static/media/npm.svg": "/veon_tech_by/static/media/npm.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/vuejs.svg": "/veon_tech_by/static/media/vuejs.a9ef3938d4960ac238e9c64d78783931.svg",
-    "main.ad952a3f.css.map": "/veon_tech_by/static/css/main.ad952a3f.css.map",
-    "main.bddc0a46.js.map": "/veon_tech_by/static/js/main.bddc0a46.js.map",
+    "main.ef9c27da.css.map": "/veon_tech_by/static/css/main.ef9c27da.css.map",
+    "main.66c1ed98.js.map": "/veon_tech_by/static/js/main.66c1ed98.js.map",
     "787.28cb0dcd.chunk.js.map": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad952a3f.css",
-    "static/js/main.bddc0a46.js"
+    "static/css/main.ef9c27da.css",
+    "static/js/main.66c1ed98.js"
   ]
 }
