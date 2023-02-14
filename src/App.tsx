@@ -39,6 +39,8 @@ function App() {
                    <Route path={routes.workInVeon} element={<WorkInVeon/>}/>
                    <Route path={routes.privacyPolicy} element={<PolityConfidence/>}/>
                    <Route path={routes.webDev} element={<Webdev/>}/>
+                   <Route path={routes.devPO} element={<Webdev/>}/>
+                   <Route path={routes.devUX} element={<Webdev/>}/>
                    <Route path={routes.webSupport} element={<Websupport/>}/>
                    <Route path={routes.nda} element={<Nda/>}/>
                </Routes>

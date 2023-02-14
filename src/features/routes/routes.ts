@@ -11,5 +11,7 @@ export const routes={
     privacyPolicy:'/privacyPolicy',
     webDev:'/web-dev',
     webSupport:'/webSupport',
-    nda:'/nda'
+    nda:'/nda',
+devPO:'/dev-po',
+    devUX:'/ux-ui-desigh'
 }
