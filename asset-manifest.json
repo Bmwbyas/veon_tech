@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/veon_tech_by/static/css/main.ef9c27da.css",
-    "main.js": "/veon_tech_by/static/js/main.66c1ed98.js",
+    "main.css": "/veon_tech_by/static/css/main.c7262ab8.css",
+    "main.js": "/veon_tech_by/static/js/main.dd4a2371.js",
     "static/js/787.28cb0dcd.chunk.js": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js",
     "static/media/example3.png": "/veon_tech_by/static/media/example3.8bbbc705aed7f869c30d.png",
     "static/media/example1.png": "/veon_tech_by/static/media/example1.adb8c25cd63b14110903.png",
@@ -38,6 +38,9 @@
     "static/media/portfolio-3.jpg": "/veon_tech_by/static/media/portfolio-3.f35b7f6828a7fdaf3965.jpg",
     "static/media/noomblistMarket.png": "/veon_tech_by/static/media/noomblistMarket.d326d1faed59f1024fc7.png",
     "static/media/12.jpg": "/veon_tech_by/static/media/12.04a7da4f6651edeef07b.jpg",
+    "static/media/advanced-maintenance.png": "/veon_tech_by/static/media/advanced-maintenance.c20ecc7a4914d28c07c9.png",
+    "static/media/absolute-maintenance.png": "/veon_tech_by/static/media/absolute-maintenance.fa76ca779f5885787f6f.png",
+    "static/media/optimal-maintenance.png": "/veon_tech_by/static/media/optimal-maintenance.f835128352c780f5f3aa.png",
     "static/media/granitCatalog.png": "/veon_tech_by/static/media/granitCatalog.f101b7bfdbbbcc28d5a5.png",
     "static/media/sodoxCatalog.png": "/veon_tech_by/static/media/sodoxCatalog.a4f6750468f4d48a560b.png",
     "static/media/prosnowVisit.png": "/veon_tech_by/static/media/prosnowVisit.fd88e56f79ff7c696f82.png",
@@ -105,12 +108,12 @@
     "static/media/magento.svg": "/veon_tech_by/static/media/magento.0937555253fc0d35b8f3fb0d8587b5bb.svg",
     "static/media/npm.svg": "/veon_tech_by/static/media/npm.3105854e2a9d8a2e5167e7fac4f54901.svg",
     "static/media/vuejs.svg": "/veon_tech_by/static/media/vuejs.a9ef3938d4960ac238e9c64d78783931.svg",
-    "main.ef9c27da.css.map": "/veon_tech_by/static/css/main.ef9c27da.css.map",
-    "main.66c1ed98.js.map": "/veon_tech_by/static/js/main.66c1ed98.js.map",
+    "main.c7262ab8.css.map": "/veon_tech_by/static/css/main.c7262ab8.css.map",
+    "main.dd4a2371.js.map": "/veon_tech_by/static/js/main.dd4a2371.js.map",
     "787.28cb0dcd.chunk.js.map": "/veon_tech_by/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef9c27da.css",
-    "static/js/main.66c1ed98.js"
+    "static/css/main.c7262ab8.css",
+    "static/js/main.dd4a2371.js"
   ]
 }
