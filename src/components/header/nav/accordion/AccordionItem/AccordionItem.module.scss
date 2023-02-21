@@ -19,7 +19,7 @@
     }
     .container {
       @include container();
-      @include flex(column, start, center, wrap);
+      @include flex(column, flex-start, center, wrap);
       margin-right: 10px;
     .item {
       position: relative;

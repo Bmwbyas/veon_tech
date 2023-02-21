@@ -3,7 +3,7 @@
 
 
 .wrapContacts {
-  @include flex(row, start, center, nowrap);
+  @include flex(row, flex-start, center, nowrap);
   background-color: #E9FCE5;
   width: 100%;
   padding: 50px 20px;
@@ -74,7 +74,7 @@
       width: 80%;
       @include flex(column, center, center, nowrap);
       background: #FFFDFD;
-      box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.25);
       border-radius: 30px;
 
       .input {

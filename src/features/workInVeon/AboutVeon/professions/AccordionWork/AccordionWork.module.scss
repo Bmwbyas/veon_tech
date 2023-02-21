@@ -2,7 +2,7 @@
 @import "../../../../../common/style/sass/mixins";
 
 .container {
-  @include flex(column, start, start, wrap);
+  @include flex(column, flex-start, flex-start, wrap);
   width: 100%;
   border-bottom: 2px solid #F0F0F0;
   &:last-child{

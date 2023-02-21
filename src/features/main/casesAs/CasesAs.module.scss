@@ -23,7 +23,7 @@
     }
 
     .cases {
-      @include flex(row, start, start, wrap);
+      @include flex(row, flex-start, flex-start, wrap);
       @media (max-width: 1100px) {
         @include flex(row, center, center, wrap);
       }

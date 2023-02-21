@@ -9,7 +9,7 @@
   @include container();
 
   .wrapper {
-    @include flex(row, start, space-between, wrap);
+    @include flex(row, flex-start, space-between, wrap);
 
 
     padding-top: 70px;

@@ -2,7 +2,7 @@
 @import "../../common/style/sass/mixins";
 .container{
   @include maxWidth();
-  @include flex(row, start  , start, wrap);
+  @include flex(row, flex-start  , flex-start, wrap);
   @include container();
   margin-top: 84px;
   .content{

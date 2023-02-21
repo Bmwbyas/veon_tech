@@ -2,21 +2,24 @@
 @import "../../../../common/style/sass/mixins";
 
 
-.container{
- @include container();
-  .h2{
-    @include text(28px,800);
+.container {
+  @include container();
+
+  .h2 {
+    @include text(28px, 800);
     text-align: center;
     margin-bottom: 30px;
   }
-  .devContainer{
-    @include flex(row,start,center,wrap);
-    gap:30px;
+
+  .devContainer {
+    @include flex(row, flex-start, center, wrap);
+    gap: 30px;
     margin-bottom: 60px;
-    .itemContainer{
-      flex:0 0 30%;
+
+    .itemContainer {
+      flex: 0 0 30%;
       @media (max-width: 1100px) {
-        flex:0 0 100%;
+        flex: 0 0 100%;
 
       }
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFFDFD;
@@ -24,23 +27,27 @@
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       transition: all 0.6s;
-      &:hover{
+
+      &:hover {
         scale: 1.05;
       }
-      .img{
+
+      .img {
         width: 100%;
         min-height: 200px;
         border-radius: 15px;
       }
-      .desc{
-        @include text(20px,800);
+
+      .desc {
+        @include text(20px, 800);
         margin: 20px 0 20px 20px;
         @media (max-width: 1100px) {
           text-align: center;
 
         }
       }
-      .buttonContainer{
+
+      .buttonContainer {
         margin: 20px 0 20px 20px;
         @media (max-width: 1100px) {
           justify-content: center;

@@ -25,7 +25,7 @@
     }
   }
 .btnCont{
-  @include flex(row, center, end, wrap);
+  @include flex(row, center, flex-end, wrap);
   border-radius: 17px;
   right: 0;
   top:50%;
@@ -35,7 +35,7 @@
   background-color: #6EEC4E;
   padding: 10px 10px 10px 60px;
   .bth{
-    @include flex(row, center, start, wrap);
+    @include flex(row, center, flex-start, wrap);
     @include btnDeleteStyle();
     cursor: auto;
     position: relative;

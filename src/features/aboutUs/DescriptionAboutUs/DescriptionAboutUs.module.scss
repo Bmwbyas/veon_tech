@@ -12,7 +12,7 @@
   }
 
   .dataContainer {
-    @include flex(column, start, start, wrap);
+    @include flex(column, flex-start, flex-start, wrap);
     padding: 20px;
 
     .headDecs {
@@ -33,7 +33,7 @@
         left: -31px;
         top: -3px;
         text-align: center;
-        padding: 0px;
+        padding: 0;
         width: 25px;
         height: 25px;
         border-radius: 50%;
@@ -48,7 +48,7 @@
 }
 
 .cotainerDecs {
-  @include flex(column, center, start, wrap);
+  @include flex(column, center, flex-start, wrap);
 
   background: #EDEDED;
   border-radius: 17px;
@@ -75,7 +75,7 @@
   }
 
   .featuresCont {
-    @include flex(column, center, start, wrap);
+    @include flex(column, center, flex-start, wrap);
 
     .feat {
       padding: 20px;

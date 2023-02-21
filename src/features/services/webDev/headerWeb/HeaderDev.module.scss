@@ -97,7 +97,7 @@
 
       .formContainer {
         transition: all 1.5s;
-        @include flex(row, center, start, wrap);
+        @include flex(row, center, flex-start, wrap);
         position: absolute;
         z-index: 12345678;
         height: 100%;

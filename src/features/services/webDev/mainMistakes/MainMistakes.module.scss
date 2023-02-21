@@ -15,11 +15,11 @@
     }
     .containerMistakes {
 
-      @include flex(row, start, center, wrap);
+      @include flex(row, flex-start, center, wrap);
       gap: 40px;
 
       .namesTechnologies {
-        @include flex(column, start, center, wrap);
+        @include flex(column, flex-start, center, wrap);
         width: 35%;
         @media (max-width: 1000px) {
           width: 100%;
@@ -51,7 +51,7 @@
         margin: 0;
         padding: 0;
         width: 60%;
-        @include flex(column, center, start, wrap);
+        @include flex(column, center, flex-start, wrap);
         line-height: 30px;
         @media (max-width: 1000px) {
           width: 100%;

@@ -3,7 +3,7 @@
 
 
 .Container{
-  @include flex(row, center, end, wrap);
+  @include flex(row, center, flex-end, wrap);
   position: fixed;
 
   right: 95px;
@@ -17,7 +17,7 @@ z-index: 12345678;
     right: 15px;
   }
   .bth{
-    @include flex(row, center, start, wrap);
+    @include flex(row, center, flex-start, wrap);
     @include btnDeleteStyle();
     position: relative;
 

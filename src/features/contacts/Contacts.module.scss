@@ -5,7 +5,7 @@
   @include flex(column, center, center, wrap);
 @include maxWidth();
   .contactContainer {
-    @include flex(row, start, center, wrap);
+    @include flex(row, flex-start, center, wrap);
 
     .itemContainer {
       @include flex(column, center, center, nowrap);

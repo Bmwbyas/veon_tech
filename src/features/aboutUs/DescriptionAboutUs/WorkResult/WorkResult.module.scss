@@ -22,7 +22,7 @@
 }
 
 .featuresCont {
-  @include flex(column, center, start, wrap);
+  @include flex(column, center, flex-start, wrap);
 
   .feat {
     padding: 20px;

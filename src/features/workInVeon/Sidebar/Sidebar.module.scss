@@ -2,10 +2,10 @@
 @import "../../../common/style/sass/mixins";
 
 .container{
-  @include flex(column, start, start, wrap);
+  @include flex(column, flex-start, flex-start, wrap);
 width: 100%;
   .navBlock{
-    @include flex(column, start ,start, nowrap);
+    @include flex(column, flex-start ,flex-start, nowrap);
      margin-bottom: 60px;
     width: 100%;
     .navItem{
@@ -24,7 +24,7 @@ width: 100%;
     }
   }
   .respond{
-    @include flex(column, start ,start, nowrap);
+    @include flex(column, flex-start ,flex-start, nowrap);
     @include text(16px,400);
     padding: 20px;
     margin-bottom: 55px;

@@ -10,7 +10,7 @@ padding: 150px 0 100px 0;
   .wrapper {
     @include container();
 
-    @include flex(row, start, center, wrap);
+    @include flex(row, flex-start, center, wrap);
     gap: 50px;
 
 

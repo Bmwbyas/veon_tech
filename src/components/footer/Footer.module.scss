@@ -46,7 +46,7 @@
           //margin-bottom: 50px;
 
           .socialWrap {
-            @include flex(row, center, start, wrap);
+            @include flex(row, center, flex-start, wrap);
             gap: 20px;
 
             .iconContainer {

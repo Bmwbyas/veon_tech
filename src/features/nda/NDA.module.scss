@@ -2,5 +2,5 @@
 @import "../../common/style/sass/mixins";
 
 .container {
-  @include flex(column, center, start, wrap);
+  @include flex(column, center, flex-start, wrap);
 }
